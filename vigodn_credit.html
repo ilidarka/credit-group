@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pop-up.css" />
+    <link rel="stylesheet" href="font/stylesheet.css" />
+    <link rel="stylesheet" href="css/refinancing.css" />
+    <link rel="stylesheet" href="css/vigodn_credit.css" />
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup__content">
+        <div class="popup__body">
+          <img
+            id="popup__close"
+            class="popup__close"
+            src="/img/pop-up/tag-cross.svg"
+            alt=""
+          />
+
+          <div class="popup_info">
+            <div class="img-container">
+              <img src="/img/pop-up/manager.svg" alt="" />
+            </div>
+            <div class="title">
+              <h1>Оставьте заявку</h1>
+              <p>и наш специалист свяжется с вами</p>
+            </div>
+            <form action="">
+              <input placeholder="Ваше имя" type="text" />
+              <input placeholder="Номер телефона или E-mail" type="text" />
+              <div class="btn-container confirm">
+                <img src="../refinancing/img/request/pocket.svg" alt="" />
+                <span>Оставить заявку</span>
+              </div>
+              <p>
+                Отправляя заявку, я предоставляю согласие<br />
+                на обработку персональных данных
+              </p>
+            </form>
+          </div>
+          <div class="popup_info confirm_popup hidden">
+            <div class="img-container">
+              <img src="../refinancing/img/pop-up/confirm2.svg" alt="" />
+            </div>
+            <div class="title">
+              <h1>Спасибо за заявку</h1>
+              <p>
+                Наш специалист свяжется с вами<br />
+                в ближайшее время
+              </p>
+            </div>
+            <div id="popup__close2" class="btn-container">
+              <span>На главную</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header_contacts">
+        <div class="container">
+          <div class="wrapper">
+            <div class="info_left">
+              <div class="item">
+                <img src="img/clock.svg" alt="" />
+                <span>Ежедневно с 8:00-23:00</span>
+              </div>
+              <div class="item">
+                <img src="img/smartphone.svg" alt="" />
+                <span>+7 (800) 888-88-88</span>
+              </div>
+              <div class="item">
+                <span>+7 (800) 888-88-88</span>
+              </div>
+            </div>
+            <div class="info_right">
+              <div class="links">
+                <img src="img/telegram_logo.svg" alt="" />
+                <img src="img/whatsapp_logo.svg" alt="" />
+              </div>
+              <span>info@kreditgroup.ru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_menu">
+        <div class="container">
+          <div class="wrapper">
+            <div class="info">
+              <img src="img/kredit-group_logo.svg" alt="" />
+              <span>Ведущий кредитный брокер в Москве</span>
+            </div>
+            <div class="links">
+              <a href="" class="link">О компании</a>
+              <a href="" class="link">Условия</a>
+              <a href="" class="link">База знаний</a>
+              <a href="" class="link">Новости</a>
+              <a href="" class="link">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondary_menu">
+        <div class="container">
+          <div class="wrapper">
+            <div class="dropdown">
+              <div class="wrapp_item">
+                <div onclick="Dropdown()" class="item dropbtn">
+                  Кредиты под залог недвижимости
+                </div>
+                <img src="img/chevron-down.svg" alt="" />
+              </div>
+              <a href="#" class="item dropbtn"></a>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="" class="item">Кредиты под залог автомобиля</a>
+                <a href="" class="item">Рефинансирование</a>
+                <a href="" class="item">Кредиты с плохой кредитной историей</a>
+                <a href="" class="item">Кредиты под залог земельного участка</a>
+                <a href="" class="item">Кредиты под залог дома, коттеджа</a>
+                <a href="" class="item">Кредиты под залог дачи</a>
+                <a href="" class="item"
+                  >Кредиты под залог коммерческой недвижемости</a
+                >
+              </div>
+            </div>
+            <a href="" class="item">Кредиты под залог автомобиля</a>
+            <a href="" class="item">Рефинансирование</a>
+            <a href="" class="item">Кредиты с плохой кредитной историей</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section_1">
+      <div class="container">
+        <div class="wrapper">
+          <div class="info">
+            <h1 class="title">
+              Выгодные кредиты и займы <br />
+              <span>под залог автомобиля</span>
+            </h1>
+            <div class="spisok">
+              <div class="item">
+                <img src="./img/convinient/check.svg" alt="" />
+                <span>Решение и деньги за 30 минут</span>
+              </div>
+              <div class="item">
+                <img src="./img/convinient/check.svg" alt="" />
+                <span>Одобряем 98% заявок</span>
+              </div>
+              <div class="item">
+                <img src="./img/convinient/check.svg" alt="" />
+                <span>Без скрытых платежей, коммисий, штрафов</span>
+              </div>
+              <div class="item">
+                <img src="./img/convinient/check.svg" alt="" />
+                <span>Выдаем до 95% стоимости авто</span>
+              </div>
+            </div>
+            <div class="wrapper_btn">
+              <div class="btn-green">
+                <img src="img/vigodn_credit/whatsapp_logo.svg" alt="" />
+                <span>Оставить заявку</span>
+              </div>
+              <div class="online">
+                <div class="green_circle"></div>
+                <span>Мы онлайн</span>
+              </div>
+            </div>
+            <span class="whatsApp"> Ответим на любые вопросы в WhatsApp </span>
+          </div>
+          <div class="img">
+            <img src="img/vigodn_credit/image.svg" alt="" />
+            <img
+              src="img/vigodn_credit/benefits_cards.svg"
+              alt=""
+              class="caption"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bistroe_odobrenie">
+      <div class="container">
+        <div class="item">
+          <div class="top_info">
+            <div class="text">
+              <h1 class="title">
+                Быстрое одобрение кредита - <br />
+                получите деньги <span> уже сегодня</span>
+              </h1>
+              <p>
+                Действуем исключительно в рамках законодательства РФ согласно
+                закону ФЗ «О финансированной аренде (лизинге)» от 29.10.1998
+                №164-ФЗ
+              </p>
+            </div>
+            <div class="wrapper_btn">
+              <div class="btn-default">
+                <span> Под залог ПТС </span>
+              </div>
+              <div class="btn-default">
+                <span> Под залог авто </span>
+              </div>
+            </div>
+          </div>
+          <div class="bottom_info">
+            <div class="item_bottom">
+              <img src="img/history.svg" alt="" />
+              <span>С самыми страшными кредитными историями</span>
+            </div>
+            <div class="item_bottom">
+              <img src="img/vigodn_credit/person.svg" alt="" />
+              <span>Без поручителей и справок о доходах</span>
+            </div>
+            <div class="item_bottom">
+              <img src="img/vigodn_credit/time.svg" alt="" />
+              <span>С долгами и текущими просрочками</span>
+            </div>
+            <div class="item_bottom">
+              <img src="img/vigodn_credit/car_docs.svg" alt="" />
+              <span>Потребуется только паспорт, СТС и ПТС</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_4 mb">
+      <div class="container">
+        <h2 class="sub_title">
+          <span>Рассчитайте</span> ежемесячный платеж по кредиту
+        </h2>
+        <div class="calculator">
+          <div class="sum">
+            <div class="item">
+              <span> Сумма займа </span>
+              <div class="summ_box">
+                <span>5 000 000</span>
+                <p>₽</p>
+              </div>
+            </div>
+            <div class="item">
+              <span> Срок займа </span>
+              <div class="summ_box">
+                <span>19</span>
+                <p>месяцев</p>
+              </div>
+            </div>
+          </div>
+          <div class="inputs">
+            <div class="wrapper">
+              <input
+                list="range_list"
+                type="range"
+                min="0"
+                max="100"
+                value="25"
+                class="slider"
+              />
+              <datalist id="range_list">
+                <option>50 тыс</option>
+                <option>5 млн</option>
+                <option>10 млн</option>
+                <option>15 млн</option>
+                <option>20 млн</option>
+              </datalist>
+
+              <div class="progress"></div>
+            </div>
+            <div class="wrapper_1">
+              <input
+                list="range_list_1"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="slider_1"
+              />
+              <datalist id="range_list_1">
+                <option>6 мес</option>
+                <option>12 мес</option>
+                <option>18 мес</option>
+                <option>24 мес</option>
+                <option>30 мес</option>
+              </datalist>
+              <div class="progress_1"></div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="predlojeniya">
+            <h3>Наше предложение</h3>
+            <div class="info">
+              <span>Ежемесячный платеж</span>
+              <span>Процентная ставка</span>
+            </div>
+            <div class="item">
+              <div class="price">268 421 ₽</div>
+              <div class="proz">2.0%</div>
+              <a href="">Предложить свою</a>
+              <form action="">
+                <input
+                  class="number_input"
+                  id="number_input"
+                  placeholder="+ 7 (---) --- -- --"
+                  type="text"
+                />
+              </form>
+              <div class="btn popup-trigger">
+                <img src="img/pocket.svg" alt="" />
+                <span>Оставить заявку</span>
+              </div>
+            </div>
+            <div class="soglasie">
+              <div>
+                Отправляя заявку, я предоставляю согласие на обработку
+                персональных данных
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="support">
+      <div class="content">
+        <div class="header">
+          <h1><span>Грамотная поддержка</span> от компании КредитГрупп</h1>
+        </div>
+        <div class="list-container">
+          <ul>
+            <li>
+              <img src="./img/support/check-pink.svg" alt="" />
+              <p>
+                Окажем поддержку и сопровождение на всех этапах<br />
+                оформления займа
+              </p>
+            </li>
+            <li>
+              <img src="./img/support/check-pink.svg" alt="" />
+              <p>
+                Подберем оптимальный для Вас кредитный продукт в<br />
+                зависимости от индивидуальных факторов
+              </p>
+            </li>
+            <li>
+              <img src="./img/support/check-pink.svg" alt="" />
+              <p>
+                Составим портфель документов, необходимый для<br />
+                одобрения
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="./img/support/check-pink.svg" alt="" />
+              <p>
+                Организуем процесс оформления согласно банковским<br />
+                требованиям
+              </p>
+            </li>
+            <li>
+              <img src="./img/support/check-pink.svg" alt="" />
+              <p>Исключим ошибки, которые приводят к отказам</p>
+            </li>
+            <li>
+              <img src="./img/support/check-pink.svg" alt="" />
+              <p>Избавим от навязанных доп. услуг и страховок</p>
+            </li>
+            <li>
+              <img src="./img/support/check-pink.svg" alt="" />
+              <p>
+                Добьемся одобрения кредита даже в крайних и исключительных
+                ситуациях
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="online_oformlenie">
+      <div class="container">
+        <div class="block">
+          <p>Быстро, выгодно и прозрачно</p>
+          <h1 class="title">Онлайн-оформление</h1>
+          <div class="wrapper_inputs">
+            <div class="left_content">
+              <div class="item">
+                <span>Марка автомобиля</span>
+                <div class="input">
+                  <img class="none" src="img/check.svg" alt="" />
+                  <input
+                    placeholder="Audi"
+                    oninput="DEB()"
+                    id="input_check"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <span>Модель автомобиля</span>
+                <div class="input">
+                  <img class="none" src="img/check.svg" alt="" />
+                  <input
+                    placeholder="A7"
+                    oninput="DEB()"
+                    id="input_check"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <span>Год выпуска</span>
+                <div class="input">
+                  <img class="none" src="img/check.svg" alt="" />
+                  <input
+                    placeholder="2012"
+                    oninput="DEB()"
+                    id="input_check"
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="left_content right_content">
+              <div class="item">
+                <span>Ваше имя</span>
+                <div class="input">
+                  <img class="none" src="img/check.svg" alt="" />
+                  <input
+                    placeholder="Ваше имя"
+                    oninput="DEB()"
+                    id="input_check"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <span>Ваш телефон</span>
+                <div class="input">
+                  <img class="none" src="img/check.svg" alt="" />
+                  <input
+                    placeholder="+7 (---) --- -- --"
+                    oninput="DEB()"
+                    id="input_check"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <div class="delete_file">
+                  <div class="item">
+                    <img src="img/check.svg" alt="" />
+                    <span>auto...pts.pdf</span>
+                    <img src="img/vigodn_credit/trash.svg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="img/check.svg" alt="" />
+                    <span>pass...rt.jpeg</span>
+                    <img src="img/vigodn_credit/trash.svg" alt="" />
+                  </div>
+                </div>
+                <div class="btn_file">
+                  <img src="img/vigodn_credit/plus.svg" alt="" />
+                  <span>Прикрепить еще</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="bottom_info">
+            <h2 class="sub_title">
+              В феврале снижаем ставку <br />
+              <span>Успейте получить займ под выгодный %</span>
+            </h2>
+            <div class="wrapp_btn">
+              <div class="btn">
+                <span>Оформить кредит онлайн</span>
+              </div>
+              <div class="sogl">
+                Отправляя заявку, я предоставляю согласие на <br />
+                обработку персональных данных
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="odobryaem">
+      <div class="container">
+        <h1 class="title">
+          Одобряем кредиты и займы под залог любых транспортных средств
+        </h1>
+        <p>Не занижаем рыночную стоимость ТС</p>
+        <div class="wrapper">
+          <div class="item">
+            <img src="img/vigodn_credit/mashina_1.svg" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/vigodn_credit/mashina_2.svg" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/vigodn_credit/mashina_3.svg" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/vigodn_credit/mashina_4.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="conditions">
+      <div class="content">
+        <div class="header">
+          <div class="left-container">
+            <img src="./img/conditions/mark-img.svg" alt="" />
+            <h2>Основные условия</h2>
+          </div>
+          <div class="right-container">
+            <p>
+              Досрочное погашение<br />
+              без&nbsp;штрафов в&nbsp;любой день
+            </p>
+          </div>
+        </div>
+        <ul class="items-container">
+          <li>
+            <img src="./img/conditions/check.svg" alt="" />
+            <p>Выдаем кредиты физическим и юридическим лицам</p>
+          </li>
+          <li>
+            <img src="./img/conditions/check.svg" alt="" />
+            <p>
+              Возраст: от 18 лет на момент заключения договора, до 85 лет на
+              момент окончания кредита
+            </p>
+          </li>
+          <li>
+            <img src="./img/conditions/check.svg" alt="" />
+            <p>
+              Гражданство РФ, наличие постоянной или временной регистрации на
+              территории РФ
+            </p>
+          </li>
+          <li>
+            <img src="./img/conditions/check.svg" alt="" />
+            <p>Автомобиль в собственности и зарегистрирован в ГИБДД РФ</p>
+          </li>
+          <li>
+            <img src="./img/conditions/check.svg" alt="" />
+            <p>
+              Документы, необходимые для получения займа под залог машины:
+              паспорт, СТС и ПТС
+            </p>
+          </li>
+          <li>
+            <img src="./img/conditions/check.svg" alt="" />
+            <p>Год выпуска транспортного средства не имеет значения</p>
+          </li>
+          <li>
+            <img src="./img/conditions/check.svg" alt="" />
+            <p>КАСКО не требуется</p>
+          </li>
+          <li>
+            <img src="./img/conditions/check.svg" alt="" />
+            <p>Рыночная стоимость автомобиля от 150.000 руб.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="credit_15_mins">
+      <div class="container">
+        <div class="item">
+          <div class="left">
+            <img src="img/vigodn_credit/time2%201.svg" alt="" />
+            <h2>Одобрим кредит <span>за 15 минут</span></h2>
+          </div>
+          <div class="right">
+            <div class="wrapper">
+              <input
+                class="number_input"
+                id="number_input"
+                placeholder="+ 7 (---) --- -- --"
+                type="text"
+              />
+              <div class="btn popup-trigger">
+                <img src="img/pocket.svg" alt="" />
+                <span>Оставить заявку</span>
+              </div>
+            </div>
+            <p>
+              Отправляя заявку, я предоставляю согласие <br />
+              на обработку персональных данных
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_3">
+      <div class="container">
+        <h2 class="sub_title"><span>4 простых шага</span> к получению денег</h2>
+        <div class="steps">
+          <div class="item">
+            <div class="img">
+              <img src="img/steps/mail.png" alt="" />
+            </div>
+            <span>Ваша заявка</span>
+          </div>
+          <div class="item">
+            <img src="img/vigodn_credit/car.png" alt="" />
+            <span>Одобрение кредита</span>
+          </div>
+          <div class="item">
+            <img src="img/steps/treaty.png" alt="" />
+            <span>Договор</span>
+          </div>
+          <div class="item">
+            <img src="img/steps/confirm.png" alt="" />
+            <span>Согласование условий</span>
+          </div>
+          <img class="line" src="img/vigodn_credit/Line%201%20(1).svg" />
+        </div>
+      </div>
+    </section>
+    <section class="help mt">
+      <div class="content">
+        <div class="left-column">
+          <div class="header">
+            <h1><span>Рефинансирование</span> кредитов и займов<br /></h1>
+          </div>
+          <div class="left-column-bottom">
+            <h2>Получите индивидуальное предложение по рефинансированию</h2>
+            <div class="btn-container">
+              <img src="./img/help/pocket.svg" alt="" />
+              <p>Оставить заявку</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-column">
+          <h2 class="sub_title">Мы поможем, если</h2>
+          <ul>
+            <li>
+              <img src="./img/help/check.svg" alt="" />
+              <p>Необходимо объединить имеющиеся кредиты</p>
+            </li>
+            <li>
+              <img src="./img/help/check.svg" alt="" />
+              <p>Есть долги по текущим кредитам</p>
+            </li>
+            <li>
+              <img src="./img/help/check.svg" alt="" />
+              <p>Нужно снизить % ставки по нынешнему кредиту</p>
+            </li>
+            <li>
+              <img src="./img/help/check.svg" alt="" />
+              <p>Рефинансируем ваши кредиты под более выгодную ставку и снизим финансовую нагрузку с возможностью получения дополнительных средств</p>
+            </li>
+            <li>
+              <img src="./img/help/check.svg" alt="" />
+              <p>Выкупим ваше транспортное средство, если оно было изъято.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="fin-support">
+      <div class="content">
+        <div class="header">
+          <h1>
+            Решаем<br />
+            <span>ваши проблемы</span>
+          </h1>
+        </div>
+        <div class="item">
+          <img src="./img/fin-support/img-1.svg" alt="" />
+          <p>Плохая кредитная история</p>
+          <span
+          >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+          >
+        </div>
+        <div class="item">
+          <img src="./img/fin-support/img-2.svg" alt="" />
+          <p>Банки отказывают</p>
+          <span
+            >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+          >
+        </div>
+        <div class="item">
+          <img src="./img/fin-support/img-3.svg" alt="" />
+          <p>Срочно нужны деньги</p>
+          <span
+            >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+          >
+        </div>
+        <div class="item">
+          <img src="./img/fin-support/img-4.svg" alt="" />
+          <p>Много невыгодных кредитов</p>
+          <span
+            >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+          >
+        </div>
+        <div class="item">
+          <img src="./img/fin-support/img-5.svg" alt="" />
+          <p>Надо закрыть текущие кредиты</p>
+          <span
+            >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+          >
+        </div>
+        <div class="txt_container">
+          <p>
+            Мы отлично понимаем, что наши клиенты оказываются в различных жизненных ситуациях и вылезти из долговой ямы бывает достаточно сложно. В такой момент важно получить понятное и честное предложение. Кредит под залог машины является выходом с прозрачными и понятными условиями. Открыто обсуждаем все нюансы перед подписанием договора, выстраивая доверительные отношения с клиентом, выдаем деньги максимально быстро, предлагая одну из самых низких ставок на рынке. Займ под залог авто доступное решение для каждого.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section_6">
+      <div class="container">
+        <div class="about_us">
+          <h2 class="sub_title">Почему мы выдаем кредиты под залог машины <span>под выгодную ставку?</span> </h2>
+          <br>
+          <br>
+          <div class="items">
+              <div class="item_txt">
+                <img src="img/check.svg" alt="">
+                <span>Для каждого клиента подбираем персональное предложение с учётом особенностей ситуации заёмщика</span>
+              </div>
+            <div class="item_txt">
+              <img src="img/check.svg" alt="">
+              <span>Для каждого клиента подбираем персональное предложение с учётом особенностей ситуации заёмщика</span>
+            </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div id="slider">
+          <div class="wrapper">
+            <div class="left_content">
+              <h2 class="sub_title">
+                Уже выдали <span>более 20 000 кредитов</span> на выгодных условиях
+              </h2>
+
+              <div class="btn_wrapper">
+                <button  class="control_prev">&#10094;</button>
+
+                <button  class="control_next">&#10095;</button>
+              </div>
+            </div>
+            <img src="img/vigodn_credit/Москва%20и%20МО-01%20(1)%201.svg" alt="">
+          </div>
+
+          <ul>
+            <li>
+                <img src="img/vigodn_credit/image%2025.svg" alt="">
+                <div class="info">
+                    <span>Займ под авто</span>
+                    <p>Форд 2015 г. выпуска</p>
+                  <p>Выдали: 350.000 р под 6% на 2 года</p>
+                </div>
+            </li>
+            <li>
+              <img src="img/vigodn_credit/image%2025.svg" alt="">
+              <div class="info">
+                <span>Займ под авто</span>
+                <p>Форд 2015 г. выпуска</p>
+                <p>Выдали: 350.000 р под 6% на 2 года</p>
+              </div>
+            </li>
+            <li>
+              <img src="img/vigodn_credit/image%2025.svg" alt="">
+              <div class="info">
+                <span>Займ под авто</span>
+                <p>Форд 2015 г. выпуска</p>
+                <p>Выдали: 350.000 р под 6% на 2 года</p>
+              </div>
+            </li>
+            <li>
+              <img src="img/vigodn_credit/image%2025.svg" alt="">
+              <div class="info">
+                <span>Займ под авто</span>
+                <p>Форд 2015 г. выпуска</p>
+                <p>Выдали: 350.000 р под 6% на 2 года</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="request mt_6">
+      <div class="content">
+        <div class="text-container">
+          <p>
+            <span>В феврале снижаем ставку</span><br />Успейте получить займ<br />
+            под выгодный %
+          </p>
+        </div>
+        <div class="input-container">
+          <form>
+            <input
+                    id="number_input"
+                    placeholder="+ 7 (---) --- -- --"
+                    type="text"
+            />
+            <div class="btn-container popup-trigger">
+              <img src="./img/request/pocket.svg" alt="" />
+              <span>Оставить заявку</span>
+            </div>
+          </form>
+          <p>
+            Отправляя заявку, я предоставляю согласие<br />
+            на обработку персональных данных
+          </p>
+        </div>
+      </div>
+    </section>
+
+  <section class="slider_2">
+    <div class="container">
+      <div class="slideshow-container">
+
+        <!-- Полноразмерные изображения с числом и текстом подписи -->
+        <div class="mySlides fade">
+          <img src="img/vigodn_credit/slider_2.svg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/vigodn_credit/slider_2.svg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/vigodn_credit/slider_2.svg" style="width:100%">
+        </div>
+
+        <!-- Вперед и назад кнопки -->
+        <div class="wrapper_btn">
+          <button onclick="plusSlides(-1)">&#10094;</button>
+          <button onclick="plusSlides(1)">&#10095;</button>
+
+        </div>
+
+      </div>
+      <br>
+
+      <!-- Точки/круги -->
+      <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+    <section class="section_8">
+      <div class="container">
+        <div class="item">
+          <div class="left">
+            <h2 class="sub_title">
+              <span>Часто задаваемые</span>
+              <br />
+              <span>вопросы</span>
+            </h2>
+            <p>
+              Сомневаетесь? Не стоит! Задайте любой вопрос, мы ответим честно,
+              грамотно и совершенно бесплатно
+            </p>
+            <div class="btn">
+              <img src="img/pocket.svg" alt="" />
+              <span>Мне только спросить</span>
+            </div>
+          </div>
+          <div class="messages">
+            <div class="wrapper">
+              <p class="you">
+                Могу ли я взять кредит под залог машины, если работаю неофициально?
+              </p>
+              <p class="me">
+                <span>Ответ:</span>Да, мы предоставляем займы людям, не имеющим официального месте работы. Если вы берете кредит под залог автомобиля, справка с места работы не потребуется.
+              </p>
+            </div>
+            <div class="wrapper">
+              <p class="you">
+                Я смогу пользоваться автомобилем, если он будет заложен?
+              </p>
+              <p class="me">
+                <span>Ответ:</span>Мы предлагаем различные варианты кредитования, как с возможностью оставить автомобиль у вас, так и с размещением ТС на нашей стоянке на время займа.
+              </p>
+            </div>
+            <div class="wrapper">
+              <p class="you">
+                Нужна крупная сумма денег уже сегодня, это возможно?
+              </p>
+              <p class="me">
+                <span>Ответ:</span>Если оставить заявку на нашем сайте, в
+                течении 15 минут Вы уже получите одобрение, оформление договора
+                и выдача наличных средств возможна в течении одного рабочего
+                дня.
+              </p>
+            </div>
+            <div class="wrapper">
+              <p class="you">
+                Нужна крупная сумма денег уже сегодня, это возможно?
+              </p>
+              <p class="me">
+                <span>Ответ:</span>Если оставить заявку на нашем сайте, в
+                течении 15 минут Вы уже получите одобрение, оформление договора
+                и выдача наличных средств возможна в течении одного рабочего
+                дня.
+              </p>
+            </div>
+            <div class="wrapper">
+              <p class="you">
+                Нужна крупная сумма денег уже сегодня, это возможно?
+              </p>
+              <p class="me">
+                <span>Ответ:</span>Если оставить заявку на нашем сайте, в
+                течении 15 минут Вы уже получите одобрение, оформление договора
+                и выдача наличных средств возможна в течении одного рабочего
+                дня.
+              </p>
+            </div>
+            <div class="wrapper">
+              <p class="you">
+                Нужна крупная сумма денег уже сегодня, это возможно?
+              </p>
+              <p class="me">
+                <span>Ответ:</span>Если оставить заявку на нашем сайте, в
+                течении 15 минут Вы уже получите одобрение, оформление договора
+                и выдача наличных средств возможна в течении одного рабочего
+                дня.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="js/inputCheck.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/calk.js"></script>
+    <script src="js/pop-up.js"></script>
+    <script src="/js/inputmask.js"></script>
+    <script src="/js/number_input.js"></script>
+    <script src="/js/slider.js"></script>
+  </body>
+</html>
