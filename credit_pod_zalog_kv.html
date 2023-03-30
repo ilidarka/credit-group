@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/refinansing/refinancing.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <link rel="stylesheet" href="css/menu_mobile/menu.css">
+  <link rel="stylesheet" href="css/pop-up/pop-up.css">
+  <link rel="stylesheet" href="css/menu_mobile/menu.css">
+  <link rel="stylesheet" href="css/Slider/slider.css">
+  <link rel="stylesheet" href="font/stylesheet.css" />
+  <link rel="stylesheet" href="css/vogodn_credit/vigodn_credit.css" />
+  <link rel="stylesheet" href="css/adaptiv.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/refinansing_media/media.css" />
+
+
+  <meta charset="UTF-8" />
+  <title>Tle</title>
+</head>
+<body>
+<div class="popup">
+  <div class="popup__content">
+    <div class="popup__body">
+      <img
+        id="popup__close"
+        class="popup__close"
+        src="./img/pop-up/tag-cross.svg"
+        alt=""
+      />
+
+      <div class="popup_info">
+        <div class="img-container">
+          <img src="./img/pop-up/manager.svg" alt="" />
+        </div>
+        <div class="title">
+          <h1>Оставьте заявку</h1>
+          <p>и наш специалист свяжется с вами</p>
+        </div>
+        <form action="">
+          <input placeholder="Ваше имя" type="text" />
+          <input placeholder="Номер телефона или E-mail" type="text" />
+          <div class="btn-container confirm">
+            <img src="../refinancing/img/request/pocket.svg" alt="" />
+            <span>Оставить заявку</span>
+          </div>
+          <p>
+            Отправляя заявку, я предоставляю согласие<br />
+            на обработку персональных данных
+          </p>
+        </form>
+      </div>
+      <div class="popup_info confirm_popup hidden">
+        <div class="img-container">
+          <img src="../refinancing/img/pop-up/confirm2.svg" alt="" />
+        </div>
+        <div class="title">
+          <h1>Спасибо за заявку</h1>
+          <p>
+            Наш специалист свяжется с вами<br />
+            в ближайшее время
+          </p>
+        </div>
+        <div id="popup__close2" class="btn-container">
+          <span>На главную</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<header class="header">
+  <div class="header_contacts">
+    <div class="container">
+      <div class="wrapper">
+        <div class="info_left">
+          <div class="item">
+            <img src="img/clock.svg" alt="" />
+            <span>Ежедневно с 8:00-23:00</span>
+          </div>
+          <div class="item">
+            <img src="img/smartphone.svg" alt="" />
+            <span>+7 (800) 888-88-88</span>
+          </div>
+          <div class="item">
+            <span>+7 (800) 888-88-88</span>
+          </div>
+        </div>
+        <div class="info_right">
+          <div class="links">
+            <a href="#">
+              <img src="img/telegram_logo.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/whatsapp_logo.svg" alt="" />
+            </a>
+          </div>
+          <span>info@kreditgroup.ru</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main_menu">
+    <div class="container">
+      <div class="wrapper">
+        <div class="info">
+          <img src="img/kredit-group_logo.svg" alt="" />
+          <span>Ведущий кредитный брокер в Москве</span>
+        </div>
+        <div class="links">
+          <a href="" class="link">О компании</a>
+          <a href="" class="link">Условия</a>
+          <a href="" class="link">База знаний</a>
+          <a href="" class="link">Новости</a>
+          <a href="" class="link">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="secondary_menu">
+    <div class="container">
+      <div class="wrapper">
+        <div class="dropdown">
+          <div class="wrapp_item">
+            <div onclick="Dropdown()" class="item dropbtn">
+              Кредиты под залог недвижимости
+            </div>
+            <img src="img/chevron-down.svg" alt="" />
+          </div>
+          <a href="#" class="item dropbtn"></a>
+          <div id="myDropdown" class="dropdown-content drop">
+            <a href="" class="item">Кредиты под залог автомобиля</a>
+            <a href="" class="item">Рефинансирование</a>
+            <a href="" class="item">Кредиты с плохой кредитной историей</a>
+            <a href="" class="item">Кредиты под залог земельного участка</a>
+            <a href="" class="item">Кредиты под залог дома, коттеджа</a>
+            <a href="" class="item">Кредиты под залог дачи</a>
+            <a href="" class="item"
+            >Кредиты под залог коммерческой недвижемости</a
+            >
+          </div>
+        </div>
+        <a href="" class="item">Кредиты под залог автомобиля</a>
+        <a href="" class="item">Рефинансирование</a>
+        <a href="" class="item">Кредиты с плохой кредитной историей</a>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="adaptiv_header">
+  <div class="container">
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <div class="container">
+
+          <div class="top">
+            <div class="wrapper">
+              <img src="img/logo_adaptiv_header.svg" alt="">
+              <span>Ведущий кредитный брокер в Москве</span>
+            </div>
+            <img onclick="closeNav()" src="img/pop-up/tag-cross.svg"
+                 alt="">
+          </div>
+
+          <div class="links">
+            <a href="#" class="link">О компании</a>
+            <a href="#" class="link">Условия</a>
+            <a href="#" class="link">База знаний</a>
+            <a href="#" class="link">Новости</a>
+            <a href="#" class="link">Контакты</a>
+          </div>
+          <div class="line"></div>
+          <div class="secondary_menu">
+            <div class="container">
+              <div class="wrapper">
+                <div class="dropdown">
+                  <div class="wrapp_item">
+                    <div onclick="drop_adaptiv()" class="item dropbtn">
+                      Кредиты под залог недвижимости
+                    </div>
+                    <img src="img/chevron-down.svg" alt="" />
+                  </div>
+                  <a href="#" class="item dropbtn"></a>
+                  <div id="myDropdown" class="dropdown-content drop_adaptiv">
+                    <a href="" class="item">Кредиты под залог автомобиля</a>
+                    <a href="" class="item">Рефинансирование</a>
+                    <a href="" class="item">Кредиты с плохой кредитной историей</a>
+                    <a href="" class="item">Кредиты под залог земельного участка</a>
+                    <a href="" class="item">Кредиты под залог дома, коттеджа</a>
+                    <a href="" class="item">Кредиты под залог дачи</a>
+                    <a href="" class="item"
+                    >Кредиты под залог коммерческой недвижемости</a
+                    >
+                  </div>
+                </div>
+                <a href="" class="item">Кредиты под залог автомобиля</a>
+                <a href="" class="item">Рефинансирование</a>
+                <a href="" class="item">Кредиты с плохой кредитной историей</a>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="item">
+              <img src="img/header_adaptiv/clock.svg" alt="">
+              <span>Ежедневно с 8:00-23:00</span>
+            </div>
+            <div class="item">
+              <img src="img/header_adaptiv/smartphone.svg" alt="">
+              <span>+7 (800) 888-88-88</span>
+            </div>
+            <div class="item item_phone">
+              <span>+7 (800) 888-88-88</span>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="img/header_adaptiv/telegram_logo.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/header_adaptiv/whatsapp_logo.svg" alt="">
+              </a>
+              <p>info@kreditgroup.ru</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="open_menu">
+      <div class="wrapper">
+        <img src="img/logo_adaptiv_header.svg" alt="">
+        <span>Ведущий кредитный брокер в Москве</span>
+      </div>
+      <img onclick="openNav()" src="img/header_adaptiv/menu.svg" alt="">
+    </div>
+  </div>
+</div>
+<section class="main-section">
+  <div class="content">
+    <div class="left-container">
+      <div class="header">
+        <h1>
+          Рефинансирование<br />
+          кредитов и займов<br />
+          <span>под залог имущества</span>
+        </h1>
+      </div>
+      <ul>
+        <li>
+          <img src="./img/check.svg" alt="" />
+          <p>Объединим несколько займов в один</p>
+        </li>
+        <li>
+          <img src="./img/check.svg" alt="" />
+          <p>Увеличим срок выплат по кредиту</p>
+        </li>
+        <li>
+          <img src="./img/check.svg" alt="" />
+          <p>Уменьшим ежемесячный платеж и ставку</p>
+        </li>
+        <li>
+          <img src="./img/check.svg" alt="" />
+          <p>Закроем долги по ипотеке</p>
+        </li>
+      </ul>
+      <img class="img_apd" src="img/vigodn_credit/benefits_cards.svg" alt="">
+    </div>
+    <div class="right-container">
+      <img src="img/vigodn_credit/main_img_credid_pod_zalog_kv.svg" alt="" />
+    </div>
+  </div>
+</section>
+<section class="bistroe_odobrenie">
+  <div class="container">
+    <div class="item">
+      <div class="top_info">
+        <div class="text">
+          <h1 class="title">
+            Одобряем кредит  <br> <span> под залог квартиры</span>
+          </h1>
+          <p>
+            Действуем исключительно в рамках законодательства РФ согласно
+            закону ФЗ «О финансированной аренде (лизинге)» от 29.10.1998
+            №164-ФЗ
+          </p>
+        </div>
+        <div class="wrapper_btn">
+          <div class="btn-default">
+            <span> Под залог ПТС </span>
+          </div>
+          <div class="btn-default">
+            <span> Под залог авто </span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_info">
+        <div class="item_bottom">
+          <img src="img/vigodn_credit/salary.svg" alt="" />
+          <span>Без официального трудоустройства и подтверждения дохода</span>
+        </div>
+        <div class="item_bottom">
+          <img src="img/vigodn_credit/bank.svg" alt="" />
+          <span>Если все банки отказали в выдачи кредита</span>
+        </div>
+        <div class="item_bottom">
+          <img src="img/history.svg" alt="" />
+          <span>Если Ваша кредитная история испорчена</span>
+        </div>
+        <div class="item_bottom">
+          <img src="img/vigodn_credit/time.svg" alt="" />
+          <span>С открытыми просрочками по текущим кредитам и займам</span>
+        </div>
+        <div class="item_bottom">
+          <img src="img/vigodn_credit/without_docs.svg" alt="" />
+          <span>Есть отказники по приватизации</span>
+        </div>
+        <div class="item_bottom">
+          <img src="img/vigodn_credit/docs.svg" alt="" />
+          <span>С наличием долгов ФССП</span>
+        </div>
+        <div class="item_bottom">
+          <img src="img/vigodn_credit/loan.svg" alt="" />
+          <span>Уже имеется много кредитов и микрозаймов</span>
+        </div>
+        <div class="item_bottom">
+          <img src="img/vigodn_credit/close_loan.svg" alt="" />
+          <span>Есть аресты, обременения и запрет на регистрационные действия</span>
+        </div>
+      </div>
+      <div class="text_adaptiv">
+            <span>
+              Действуем исключительно в рамках законодательства РФ согласно закону ФЗ «О финансированной аренде (лизинге)» от 29.10.1998 №164-ФЗ
+            </span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="credit_15_mins">
+  <div class="container">
+    <div class="item">
+      <div class="left">
+        <img src="img/vigodn_credit/time2%201.svg" alt="" />
+        <h2>Одобрим кредит <span>за 15 минут</span></h2>
+      </div>
+      <div class="right">
+        <div class="wrapper">
+          <input
+            class="number_input phoneInput"
+            id="number_input"
+            placeholder="+ 7 (---) --- -- --"
+            type="text"
+          />
+          <div class="btn popup-trigger">
+            <img src="img/pocket.svg" alt="" />
+            <span>Оставить заявку</span>
+          </div>
+        </div>
+        <p>
+          Отправляя заявку, я предоставляю согласие <br />
+          на обработку персональных данных
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section_6 pod_zalog_kv_sec_6">
+  <div class="container">
+    <div class="about_us">
+      <h2 class="sub_title">Получить кредит под залог квартиры <span>быстро и просто</span> </h2>
+      <br>
+      <br>
+      <div class="items">
+        <div class="item_txt">
+          <img src="img/check.svg" alt="">
+          <span>Нужно всего 2 документа: паспорт и документ о собственности</span>
+        </div>
+        <div class="item_txt">
+          <img src="img/check.svg" alt="">
+          <span>Выдаём деньги при подписании договора за 1 день</span>
+        </div>
+        <div class="item_txt">
+          <img src="img/check.svg" alt="">
+          <span>Без обязательного оформления страхования жизни и имущества</span>
+        </div>
+        <div class="item_txt">
+          <img src="img/check.svg" alt="">
+          <span>Возможно предоставление отсрочки платежа до 6 месяцев</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section_3">
+  <div class="container">
+    <h2 class="sub_title"><span>4 простых шага</span> к получению денег</h2>
+    <div class="steps">
+      <div class="item">
+        <div class="img">
+          <img src="img/steps/mail.png" alt="" />
+        </div>
+        <span>Ваша заявка</span>
+      </div>
+      <div class="item">
+        <img src="img/vigodn_credit/mortgage2.svg" alt="" />
+        <span>Оценка квартиры  </span>
+      </div>
+      <div class="item">
+        <img src="img/steps/treaty.png" alt="" />
+        <span>Регистрация залога</span>
+      </div>
+      <div class="item">
+        <img src="img/steps/confirm.png" alt="" />
+        <div class="info">
+          <img src="img/check.svg" alt="" />
+          <span>Выдача денег</span>
+        </div>
+      </div>
+      <img class="line" src="img/vigodn_credit/Line%201%20(1).svg" />
+    </div>
+  </div>
+</section>
+<section class="conditions">
+  <div class="content">
+    <div class="header">
+      <div class="left-container">
+        <img src="./img/conditions/mark-img.svg" alt="" />
+        <h2>Основные условия</h2>
+      </div>
+      <div class="right-container">
+        <p>
+          Досрочное погашение <br> без штрафов в любой день
+        </p>
+      </div>
+    </div>
+    <ul class="items-container">
+      <li>
+        <img src="./img/conditions/check.svg" alt="" />
+        <p>Выдаем кредиты физическим и юридическим лицам</p>
+      </li>
+      <li>
+        <img src="./img/conditions/check.svg" alt="" />
+        <p>
+          Возраст: от 18 лет на момент заключения договора, до 85 лет на
+          момент окончания кредита
+        </p>
+      </li>
+      <li>
+        <img src="./img/conditions/check.svg" alt="" />
+        <p>
+          Гражданство РФ, наличие постоянной или временной регистрации на
+          территории РФ
+        </p>
+      </li>
+      <li>
+        <img src="./img/conditions/check.svg" alt="" />
+        <p>Не нужно выписываться в том числе не совершеннолетним</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="convinient">
+  <div class="content">
+    <div class="header">
+      <h1>С нами <span>удобно и выгодно</span></h1>
+    </div>
+    <div class="adaptiv-img-container">
+      <img src="./img/convinient/image.svg" alt="" />
+    </div>
+    <div class="items-container">
+      <div class="bg-img">
+        <img src="./img/convinient/image.svg" alt="" />
+      </div>
+      <div class="items-column">
+        <div class="item">
+          <img src="./img/convinient/check.svg" alt="" />
+          <p>
+            Подберём выгодное предложение<br />
+            по кредиту, исходя из вашей ситуации
+          </p>
+        </div>
+        <div class="item">
+          <img src="./img/convinient/check.svg" alt="" />
+          <p>
+            Высоко оценим квартиру и предложим<br />
+            минимальную процентную ставку
+          </p>
+        </div>
+        <div class="item">
+          <img src="./img/convinient/check.svg" alt="" />
+          <p>
+            Предложим прозрачные условия,<br />
+            убережём от всех возможных рисков
+          </p>
+        </div>
+        <div class="item">
+          <img src="./img/convinient/check.svg" alt="" />
+          <p>
+            Определим комфортный ежемесячный<br />
+            платёж по займу
+          </p>
+        </div>
+      </div>
+      <div class="items-column" style="justify-content: flex-end">
+        <div class="item">
+          <img src="./img/convinient/check.svg" alt="" />
+          <p>
+            Избавим от дополнительных комиссий,<br />
+            скрытых условий и процентов
+          </p>
+        </div>
+        <div class="item">
+          <img src="./img/convinient/check.svg" alt="" />
+          <p>
+            Поможем оформить кредит под залог<br />
+            квартиры, когда деньги нужны срочно
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fin-support">
+  <div class="container">
+    <h2 class="sub_title fz_36">
+      <span>Поможем в сложной ситуации</span> и снизим финансовую нагрузку с помощью рефинансирования под залог квартиры
+    </h2>
+  </div>
+  <div class="content">
+    <div class="item">
+      <img src="./img/vigodn_credit/calculator2.svg" alt="" />
+      <p>Невыгодная ставка по нынешним кредитам</p>
+      <span
+      >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+      >
+    </div>
+    <div class="item">
+      <img src="./img/vigodn_credit/layers2.svg" alt="" />
+      <p>Множество долгов по ЖКХ, ФСПП, микрозаймы</p>
+      <span
+      >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+      >
+    </div>
+    <div class="item">
+      <img src="./img/vigodn_credit/time2.svg" alt="" />
+      <p>Много кредитов и займов, есть просрочки</p>
+      <span
+      >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+      >
+    </div>
+    <div class="item">
+      <img src="./img/vigodn_credit/history_2.svg" alt="" />
+      <p>Просрочена задолженностью по ипотеке или залоговому кредиту</p>
+      <span
+      >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+      >
+    </div>
+    <div class="item">
+      <img src="./img/vigodn_credit/judge2.svg" alt="" />
+      <p>Грозит суд с банком и взыскание задолженности</p>
+      <span
+      >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+      >
+    </div>
+    <div class="item">
+      <img src="./img/vigodn_credit/salary2.svg" alt="" />
+      <p>Находитесь на грани банкротства или выселения из квартиры</p>
+      <span
+      >Оформим новый кредит для&nbsp;погашения предыдущих займов
+            на&nbsp;более выгодных условиях</span
+      >
+    </div>
+
+  </div>
+</section>
+<section class="refinansiryem">
+  <div class="container">
+    <h2 class="sub_title">
+      <span>Рефинансируем ваши действующие кредиты</span> под более выгодную ставку с возможностью получения дополнительных средств
+    </h2>
+    <div class="items">
+      <div class="item">
+        <img src="./img/check.svg" alt="">
+        <span>Уменьшим ежемесячный платеж</span>
+      </div>
+      <div class="item">
+        <img src="./img/check.svg" alt="">
+        <span>Объединим все имеющиеся кредиты и займы
+       </span>
+      </div>
+      <div class="item">
+        <img src="./img/check.svg" alt="">
+        <span>Сделаем перезалог со списанием пеней и штрафов
+       </span>
+      </div>
+      <div class="item">
+        <img src="./img/check.svg" alt="">
+        <span>Снизим % от ставки по текущим займам
+       </span>
+      </div>
+      <div class="item">
+        <img src="./img/check.svg" alt="">
+        <span>Решим вопрос с просроченной задолженностью по ипотеке
+       </span>
+      </div>
+      <div class="item">
+        <img src="./img/check.svg" alt="">
+        <span>Закроем долги по текущим кредитам
+       </span>
+      </div>
+      <div class="item">
+        <img src="./img/check.svg" alt="">
+        <span>Рефинансируем кредит по уже заложенному имуществу под более выгодные условия 
+       </span>
+      </div>
+      <div class="item">
+        <img src="./img/check.svg" alt="">
+        <span>Увеличим сумму займа
+       </span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="online_oformlenie">
+  <div class="container">
+    <div class="block">
+      <p>Быстро, выгодно и прозрачно</p>
+      <h1 class="title">Онлайн-оформление</h1>
+      <div class="wrapper_inputs">
+        <div class="left_content">
+          <div class="item">
+            <span>Площадь квартиры, м2</span>
+            <div class="input">
+              <img class="none" src="img/check.svg" alt="" />
+              <input
+                placeholder="80"
+                oninput="DEB()"
+                id="input_check"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <span>Примерная стоимость квартиры</span>
+            <div class="input">
+              <img class="none" src="img/check.svg" alt="" />
+              <input
+                placeholder="4 000 000"
+                oninput="DEB()"
+                id="input_check"
+                type="text"
+              />
+            </div>
+          </div>
+
+        </div>
+        <div class="left_content right_content">
+          <div class="item">
+            <span>Ваше имя</span>
+            <div class="input">
+              <img class="none" src="img/check.svg" alt="" />
+              <input
+                placeholder="Ваше имя"
+                oninput="DEB()"
+                id="input_check"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <span>Ваш телефон</span>
+            <div class="input">
+              <img class="none" src="img/check.svg" alt="" />
+              <input
+                placeholder="+7 (---) --- -- --"
+                oninput="DEB()"
+                id="input_check"
+                type="text"
+                class="phoneInput"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="delete_file">
+              <div class="item">
+                <img src="img/check.svg" alt="" />
+                <span>auto...pts.pdf</span>
+                <img src="img/vigodn_credit/trash.svg" alt="" />
+              </div>
+              <div class="item">
+                <img src="img/check.svg" alt="" />
+                <span>pass...rt.jpeg</span>
+                <img src="img/vigodn_credit/trash.svg" alt="" />
+              </div>
+            </div>
+            <div class="btn_file">
+              <img src="img/vigodn_credit/plus.svg" alt="" />
+              <span>Прикрепить еще</span>
+            </div>
+            <div class="btn_file_docs">
+              <img src="img/vigodn_credit/paperclip.svg" alt="" />
+              <span>Прикрепить документы</span>
+            </div>
+            <div class="docs_text">
+              <span>Документы</span>
+              <img src="img/vigodn_credit/info.svg" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="bottom_info">
+        <h2 class="sub_title">
+          В феврале снижаем ставку <br />
+          <span>Успейте получить займ под выгодный %</span>
+        </h2>
+        <div class="wrapp_btn">
+          <div class="btn">
+            <span>Оформить кредит онлайн</span>
+          </div>
+          <div class="sogl">
+            Отправляя заявку, я предоставляю согласие на <br />
+            обработку персональных данных
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="support">
+  <div class="content">
+    <div class="header">
+      <h1><span>Грамотная поддержка</span> от компании КредитГрупп</h1>
+    </div>
+    <div class="list-container">
+      <ul>
+        <li>
+          <img src="./img/support/check-pink.svg" alt="">
+          <p>
+            Окажем поддержку и сопровождение на всех этапах<br>
+            оформления займа
+          </p>
+        </li>
+        <li>
+          <img src="./img/support/check-pink.svg" alt="">
+          <p>
+            Подберем оптимальный для Вас кредитный продукт в<br>
+            зависимости от индивидуальных факторов
+          </p>
+        </li>
+        <li>
+          <img src="./img/support/check-pink.svg" alt="">
+          <p>
+            Составим портфель документов, необходимый для<br>
+            одобрения
+          </p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <img src="./img/support/check-pink.svg" alt="">
+          <p>
+            Организуем процесс оформления согласно банковским<br>
+            требованиям
+          </p>
+        </li>
+        <li>
+          <img src="./img/support/check-pink.svg" alt="">
+          <p>Исключим ошибки, которые приводят к отказам</p>
+        </li>
+        <li>
+          <img src="./img/support/check-pink.svg" alt="">
+          <p>Избавим от навязанных доп. услуг и страховок</p>
+        </li>
+        <li>
+          <img src="./img/support/check-pink.svg" alt="">
+          <p>
+            Добьемся одобрения кредита даже в крайних и исключительных
+            ситуациях
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="vida4a_pod_zalog_kv">
+  <div class="container">
+    <div class="item">
+      <div class="top">
+        <img src="./img/vigodn_credit/loan2.svg" alt="">
+        <h2 class="sub_title"> <span>Выдача кредитов и займов</span> <br> под залог квартиры в КредитГрупп</h2>
+      </div>
+      <div class="bottom">
+        <p>Важным направлением нашей деятельности является выдача кредитов и займов под залог квартиры для клиентов, находящихся в самых различных ситуациях. Улучшить финансовую ситуацию без трудозатрат можно выгодно с помощью займа под залог квартиры. <br> <br>
+          Обращаясь к нам, вы можете быть уверены, что получите прозрачные условия кредитования без дополнительных навязанных услуг в максимально короткие сроки. Мы работаем соблюдая все законы РФ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slider">
+  <div class="container">
+    <div id="slider">
+      <div class="wrapper">
+        <div class="left_content">
+          <h2 class="sub_title">
+            Уже выдали <span>более 20 000 кредитов</span> на выгодных условиях
+          </h2>
+
+          <div class="btn_wrapper">
+            <button  class="control_prev">&#10094;</button>
+
+            <button  class="control_next">&#10095;</button>
+          </div>
+        </div>
+        <img src="img/vigodn_credit/Москва%20и%20МО-01%20(1)%201.svg" alt="">
+      </div>
+      <ul>
+        <li>
+          <img src="img/vigodn_credit/image%2025.svg" alt="">
+          <div class="info">
+            <span>Займ под авто</span>
+            <p>Форд 2015 г. выпуска</p>
+            <p>Выдали: 350.000 р под 6% на 2 года</p>
+          </div>
+        </li>
+        <li>
+          <img src="img/vigodn_credit/image%2025.svg" alt="">
+          <div class="info">
+            <span>Займ под авто</span>
+            <p>Форд 2015 г. выпуска</p>
+            <p>Выдали: 350.000 р под 6% на 2 года</p>
+          </div>
+        </li>
+        <li>
+          <img src="img/vigodn_credit/image%2025.svg" alt="">
+          <div class="info">
+            <span>Займ под авто</span>
+            <p>Форд 2015 г. выпуска</p>
+            <p>Выдали: 350.000 р под 6% на 2 года</p>
+          </div>
+        </li>
+        <li>
+          <img src="img/vigodn_credit/image%2025.svg" alt="">
+          <div class="info">
+            <span>Займ под авто</span>
+            <p>Форд 2015 г. выпуска</p>
+            <p>Выдали: 350.000 р под 6% на 2 года</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="btn_wrapper btn_slide_hide">
+    <button  class="control_prev">&#10094;</button>
+
+    <button  class="control_next">&#10095;</button>
+  </div>
+</section>
+<section class="request mt_6">
+  <div class="content">
+    <div class="text-container">
+      <p>
+        <span>В феврале снижаем ставку</span><br />Успейте получить займ<br />
+        под выгодный %
+      </p>
+    </div>
+    <div class="input-container">
+      <form>
+        <input
+          id="number_input phoneInput"
+          placeholder="+ 7 (---) --- -- --"
+          type="text"
+        />
+        <div class="btn-container popup-trigger">
+          <img src="./img/request/pocket.svg" alt="" />
+          <span>Оставить заявку</span>
+        </div>
+      </form>
+      <p>
+        Отправляя заявку, я предоставляю согласие<br />
+        на обработку персональных данных
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section_8">
+  <div class="container">
+    <div class="item">
+      <div class="left">
+        <h2 class="sub_title">
+          <span>Часто задаваемые</span>
+          <br />
+          <span>вопросы</span>
+        </h2>
+        <p>
+          Сомневаетесь? Не стоит! Задайте любой вопрос, мы ответим честно,
+          грамотно и совершенно бесплатно
+        </p>
+        <div class="btn">
+          <img src="img/pocket.svg" alt="" />
+          <span>Мне только спросить</span>
+        </div>
+      </div>
+      <div class="right">
+        <div class="shadow"></div>
+
+        <div class="messages">
+          <div class="wrapper">
+            <p class="you">
+              Могу ли я взять кредит под залог машины, если работаю неофициально?
+            </p>
+            <p class="me">
+              <span>Ответ:</span>Да, мы предоставляем займы людям, не имеющим официального месте работы. Если вы берете кредит под залог автомобиля, справка с места работы не потребуется.
+            </p>
+          </div>
+          <div class="wrapper">
+            <p class="you">
+              Я смогу пользоваться автомобилем, если он будет заложен?
+            </p>
+            <p class="me">
+              <span>Ответ:</span>Мы предлагаем различные варианты кредитования, как с возможностью оставить автомобиль у вас, так и с размещением ТС на нашей стоянке на время займа.
+            </p>
+          </div>
+          <div class="wrapper">
+            <p class="you">
+              Нужна крупная сумма денег уже сегодня, это возможно?
+            </p>
+            <p class="me">
+              <span>Ответ:</span>Если оставить заявку на нашем сайте, в
+              течении 15 минут Вы уже получите одобрение, оформление договора
+              и выдача наличных средств возможна в течении одного рабочего
+              дня.
+            </p>
+          </div>
+          <div class="wrapper">
+            <p class="you">
+              Нужна крупная сумма денег уже сегодня, это возможно?
+            </p>
+            <p class="me">
+              <span>Ответ:</span>Если оставить заявку на нашем сайте, в
+              течении 15 минут Вы уже получите одобрение, оформление договора
+              и выдача наличных средств возможна в течении одного рабочего
+              дня.
+            </p>
+          </div>
+          <div class="wrapper">
+            <p class="you">
+              Нужна крупная сумма денег уже сегодня, это возможно?
+            </p>
+            <p class="me">
+              <span>Ответ:</span>Если оставить заявку на нашем сайте, в
+              течении 15 минут Вы уже получите одобрение, оформление договора
+              и выдача наличных средств возможна в течении одного рабочего
+              дня.
+            </p>
+          </div>
+          <div class="wrapper">
+            <p class="you">
+              Нужна крупная сумма денег уже сегодня, это возможно?
+            </p>
+            <p class="me">
+              <span>Ответ:</span>Если оставить заявку на нашем сайте, в
+              течении 15 минут Вы уже получите одобрение, оформление договора
+              и выдача наличных средств возможна в течении одного рабочего
+              дня.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section_message_mobile">
+  <div class="container">
+    <h2 class="sub_title">
+      <span>Часто задаваемые вопросы</span>
+    </h2>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="item">
+          <div class="item_me">
+            <span>Отказали в 5 банках, предположительно из-за большого количества незакрытых кредитов, Вы сможете помочь?</span>
+          </div>
+          <div class="item_you">
+                <span>
+                  <p>Ответ:</p> В 99% случаев мы одобряем заёмщиков с большой кредитной нагрузкой, кому банки уже отказывали.
+                </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mySlides fade">
+        <div class="item">
+          <div class="item_me">
+            <span>Отказали в 5 банках, предположительно из-за большого количества незакрытых кредитов, Вы сможете помочь?</span>
+          </div>
+          <div class="item_you">
+                <span>
+                  <p>Ответ:</p> В 99% случаев мы одобряем заёмщиков с большой кредитной нагрузкой, кому банки уже отказывали.
+                </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mySlides fade">
+        <div class="item">
+          <div class="item_me">
+            <span>Отказали в 5 банках, предположительно из-за большого количества незакрытых кредитов, Вы сможете помочь?</span>
+          </div>
+          <div class="item_you">
+                <span>
+                  <p>Ответ:</p> В 99% случаев мы одобряем заёмщиков с большой кредитной нагрузкой, кому банки уже отказывали.
+                </span>
+          </div>
+        </div>
+
+      </div>
+      <div class="mySlides fade">
+        <div class="item">
+          <div class="item_me">
+            <span>Отказали в 5 банках, предположительно из-за большого количества незакрытых кредитов, Вы сможете помочь?</span>
+          </div>
+          <div class="item_you">
+                <span>
+                  <p>Ответ:</p> В 99% случаев мы одобряем заёмщиков с большой кредитной нагрузкой, кому банки уже отказывали.
+                </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Вперед и назад кнопки -->
+    </div>
+    <br>
+
+    <!-- Точки/круги -->
+    <div style="text-align:center" class="wrapper_dots_btn">
+      <a class="prev" onclick="plusSlides(-1)">
+        <span>&#10094;</span>
+      </a>
+      <div style="text-align:center">
+        <span class="dot_slide_2" onclick="current(1)"></span>
+        <span class="dot_slide_2" onclick="current(2)"></span>
+        <span class="dot_slide_2" onclick="current(3)"></span>
+        <span class="dot_slide_2" onclick="current(4)"></span>
+      </div>
+      <a class="next" onclick="plusSlides(1)">
+          <span>
+            &#10095;
+          </span></a>
+    </div>
+
+  </div>
+</section>
+<section class="tak_predlog">
+  <div class="container">
+    <h2 class="sub_title">
+      Также мы предлагаем
+    </h2>
+    <div class="items">
+      <a href="#" class="item">
+        <div class="image">
+          <img src="img/vigodn_credit/arrow-up-right.svg" alt="" class="item_img_hide">
+        </div>
+        <img src="img/zaimi/car2.svg" alt="" class="item_img_hide ">
+        <span>Кредиты под залог автомобиля</span>
+            <img src="img/vigodn_credit/arrow-up-right_hover.svg" alt="" class="item_block_img">
+            <p>Перейти</p>
+      </a>
+      <a href="#" class="item">
+        <div class="image">
+          <img src="img/vigodn_credit/arrow-up-right.svg" alt="" class="item_img_hide">
+        </div>
+        <img src="img/vigodn_credit/mortgage2.svg" alt="" class="item_img_hide ">
+        <span>Кредиты под залог недвижимости</span>
+        <img src="img/vigodn_credit/arrow-up-right_hover.svg" alt="" class="item_block_img">
+        <p>Перейти</p>
+      </a>
+      <a href="#" class="item">
+        <div class="image">
+          <img src="img/vigodn_credit/arrow-up-right.svg" alt="" class="item_img_hide">
+        </div>
+        <img src="img/vigodn_credit/without_docs2.svg" alt="" class="item_img_hide ">
+        <span>Кредиты без справок</span>
+        <img src="img/vigodn_credit/arrow-up-right_hover.svg" alt="" class="item_block_img">
+        <p>Перейти</p>
+      </a>
+      <a href="#" class="item">
+        <div class="image">
+          <img src="img/vigodn_credit/arrow-up-right.svg" alt="" class="item_img_hide">
+        </div>
+        <img src="img/vigodn_credit/calculator2.svg" alt="" class="item_img_hide ">
+        <span>Рефинансирование займов</span>
+        <img src="img/vigodn_credit/arrow-up-right_hover.svg" alt="" class="item_block_img">
+        <p>Перейти</p>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="section_1">
+  <div class="container">
+    <div class="logos">
+      <img src="img/icon_partner/1.png" alt="" />
+      <img src="img/icon_partner/Sovcombank_logo.svg" alt="" />
+      <img src="img/icon_partner/MKB_logo.svg" alt="" />
+      <img src="img/icon_partner/Raiffeisen_Bank_logo.svg" alt="" />
+      <img src="img/icon_partner/YuniCredit_logo.svg" alt="" />
+    </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="item">
+      <div class="top">
+        <div class="logo_footer">
+          <img src="img/footer_logo.svg" alt="">
+          <span>Ведущий кредитный брокер в Москве</span>
+        </div>
+        <div class="links">
+          <a href="" class="link">О компании</a>
+          <a href="" class="link">Условия</a>
+          <a href="" class="link">База знаний</a>
+          <a href="" class="link">Новости</a>
+          <a href="" class="link">Контакты</a>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="wrapper">
+          <div class="info_left">
+            <div class="item">
+              <img src="./img/clock.svg" alt="" />
+              <span>Ежедневно с 8:00-23:00</span>
+            </div>
+            <div class="item">
+              <img src="img/smartphone.svg" alt="" />
+              <span>+7 (800) 888-88-88</span>
+            </div>
+            <div class="item item_phone">
+              <span>+7 (800) 888-88-88</span>
+            </div>
+          </div>
+          <div class="info_right">
+            <div class="links">
+              <a href="">
+                <img src="img/telegram_logo.svg" alt="" />
+
+              </a>
+              <a href="">
+                <img src="img/whatsapp_logo.svg" alt="" />
+
+              </a>
+            </div>
+            <span>info@kreditgroup.ru</span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+            <span
+            >Представленная информация не является публичной офертой,
+              определяемой положениями ст. 437 ГК Российской Федерации и носит
+              информационный характер.</span
+            >
+        <img src="img/gasfort_logo.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="./js/dropdown.js"></script>
+<script src="./js/calk.js"></script>
+<script src="./js/pop-up.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/inputmask.js"></script>
+<script src="./js/number_input.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/drop.js"></script>
+<script src="./js/inputCheck.js"></script>
+<script src="./js/phoneMaskScript.js"></script>
+</body>
+</html>

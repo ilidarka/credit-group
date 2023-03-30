@@ -11,7 +11,7 @@ input {
 }
 
 body {
-  background: #ECEFF4;
+  background: #eceff4;
   overflow-x: hidden;
 }
 
@@ -38,7 +38,7 @@ datalist {
 
 .input {
   padding: 14px 25px 14px 25px;
-  background: linear-gradient(86.42deg, #FFFFFF 0%, #F6F3FF 100%);
+  background: linear-gradient(86.42deg, #ffffff 0%, #f6f3ff 100%);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@ datalist {
 }
 .input span {
   font-family: "Gilroy";
-  color: #2A2E33;
+  color: #2a2e33;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -71,12 +71,12 @@ datalist {
   align-items: center;
   gap: 10px;
   padding: 19px 35px 19px 36px;
-  background: #2A2E33;
+  background: #2a2e33;
   border-radius: 20px 20px 20px 1px;
   cursor: pointer;
 }
 .btn:hover {
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
 }
 .btn span {
   font-family: "Raleway";
@@ -84,7 +84,8 @@ datalist {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
+  width: 151px;
 }
 
 .btn-green {
@@ -94,11 +95,11 @@ datalist {
   padding: 19px 35px 19px 36px;
   border-radius: 20px 20px 20px 1px;
   cursor: pointer;
-  background: #45BA51;
+  background: #45ba51;
   transition: 0.3s;
 }
 .btn-green:hover {
-  background: #82CE8A;
+  background: #82ce8a;
 }
 .btn-green span {
   font-family: "Raleway";
@@ -106,24 +107,25 @@ datalist {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .btn-default {
   padding: 19px 36px;
   display: flex;
   align-items: center;
-  background: #2A2E33;
+  justify-content: center;
+  background: #2a2e33;
   border-radius: 20px;
   gap: 11px;
   cursor: pointer;
 }
 .btn-default:hover {
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   border-radius: 20px;
 }
 .btn-default span {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -132,34 +134,38 @@ datalist {
 }
 
 .title {
-  font-family: "Raleway";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 58px;
   line-height: 115%;
+  /* or 67px */
   letter-spacing: -0.01em;
   font-feature-settings: "pnum" on, "lnum" on;
-  color: #2A2E33;
+  /* black */
+  color: #2a2e33;
 }
 .title span {
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%), #2E323D;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%), #2e323d;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
 }
 
 .sub_title {
-  font-family: "Raleway";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
   line-height: 115%;
+  /* or 52px */
   letter-spacing: -0.01em;
-  color: #2A2E33;
+  /* black */
+  color: #2a2e33;
   z-index: 10;
 }
 .sub_title span {
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%), #2E323D;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%), #2e323d;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
@@ -168,7 +174,7 @@ datalist {
 .dropdown-content {
   display: none;
   position: absolute;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 20px;
   width: 400px;
   z-index: 1;
@@ -176,18 +182,33 @@ datalist {
   padding: 20px 0 20px 20px;
 }
 .dropdown-content a {
+  position: relative;
   font-family: "Raleway";
   font-size: 15px;
   line-height: 180%;
-  color: #2A2E33;
+  color: #2a2e33;
   transition: 0.3s;
   text-decoration: none;
 }
 .dropdown-content a:hover {
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
+}
+.dropdown-content a:after {
+  display: block;
+  position: absolute;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 3px; /*задаём ширину линии*/
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  content: "";
+  transition: width 0.3s ease-out;
+  border-radius: 10px; /*задаём время анимации*/
+}
+.dropdown-content a:hover:after, .dropdown-content a:focus:after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
 .dropdown {
@@ -195,7 +216,7 @@ datalist {
   display: inline-block;
 }
 
-.show {
+.showDrop {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -203,7 +224,7 @@ datalist {
 
 .header_contacts {
   padding: 16px 0;
-  background: #2A2E33;
+  background: #2a2e33;
 }
 .header_contacts .wrapper {
   display: flex;
@@ -227,7 +248,7 @@ datalist {
   font-weight: 700;
   font-size: 16px;
   line-height: 180%;
-  color: #E5E8EE;
+  color: #e5e8ee;
 }
 .header_contacts .wrapper .info_right {
   display: flex;
@@ -245,7 +266,7 @@ datalist {
   font-weight: 700;
   font-size: 16px;
   line-height: 180%;
-  color: #E5E8EE;
+  color: #e5e8ee;
   font-feature-settings: "pnum" on, "lnum" on;
 }
 
@@ -268,20 +289,35 @@ datalist {
   font-weight: 400;
   font-size: 14px;
   line-height: 135%;
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .main_menu .links {
   display: flex;
   gap: 60px;
 }
 .main_menu .links .link {
+  position: relative;
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 180%;
-  color: #2A2E33;
+  color: #2a2e33;
+}
+.main_menu .links .link:after {
+  display: block;
+  position: absolute;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 3px; /*задаём ширину линии*/
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  content: "";
+  transition: width 0.3s ease-out;
+  border-radius: 10px; /*задаём время анимации*/
+}
+.main_menu .links .link:hover:after, .main_menu .links .link:focus:after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
 .secondary_menu .wrapper {
@@ -292,7 +328,7 @@ datalist {
   border-radius: 20px;
   margin-top: 19px;
   display: flex;
-  gap: 42px;
+  justify-content: space-between;
 }
 .secondary_menu .wrapper .wrapp_item {
   display: flex;
@@ -300,32 +336,38 @@ datalist {
   gap: 4px;
 }
 .secondary_menu .wrapper .item {
+  position: relative;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 180%;
-  color: #2A2E33;
+  color: #2a2e33;
   text-decoration: none;
   cursor: pointer;
 }
-
-.section_1 {
-  margin-top: 100px;
+.secondary_menu .wrapper .item:after {
+  display: block;
+  position: absolute;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 3px; /*задаём ширину линии*/
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  content: "";
+  transition: width 0.3s ease-out;
+  border-radius: 10px; /*задаём время анимации*/
 }
+.secondary_menu .wrapper .item:hover:after, .secondary_menu .wrapper .item:focus:after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
 .section_1 .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.section_1 .wrapper .img img {
-  position: absolute;
-  left: 750px;
-  top: 243px;
-}
-.section_1 .wrapper .img .caption {
-  position: absolute;
-  top: 611px;
-  left: 908px;
+.section_1 .wrapper .img {
+  width: 500px;
 }
 .section_1 .wrapper .info {
   display: flex;
@@ -337,7 +379,7 @@ datalist {
   font-weight: 500;
   font-size: 16px;
   line-height: 180%;
-  color: #2A2E33;
+  color: #2a2e33;
   margin-top: 20px;
 }
 .section_1 .wrapper .info .form {
@@ -348,7 +390,7 @@ datalist {
 }
 .section_1 .wrapper .info .form .input {
   padding: 14px 25px 14px 25px;
-  background: linear-gradient(86.42deg, #FFFFFF 0%, #F6F3FF 100%);
+  background: linear-gradient(86.42deg, #ffffff 0%, #f6f3ff 100%);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -357,7 +399,7 @@ datalist {
 }
 .section_1 .wrapper .info .form .input span {
   font-family: "Gilroy";
-  color: #2A2E33;
+  color: #2a2e33;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -378,14 +420,15 @@ datalist {
 .section_1 .wrapper .info .form .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   padding: 19px 35px 19px 36px;
-  background: #2A2E33;
+  background: #2a2e33;
   border-radius: 20px 20px 20px 1px;
   cursor: pointer;
 }
 .section_1 .wrapper .info .form .btn:hover {
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
 }
 .section_1 .wrapper .info .form .btn span {
   font-family: "Raleway";
@@ -393,7 +436,7 @@ datalist {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .section_1 .logos {
   margin-top: 170px;
@@ -412,7 +455,7 @@ datalist {
   backdrop-filter: blur(5px);
   border-radius: 40px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   margin-bottom: 143px;
 }
@@ -452,6 +495,11 @@ datalist {
   text-align: end;
 }
 .section_2 .item .info .benefits_cards {
+  position: absolute;
+  top: 305px;
+  right: 600px;
+}
+.section_2 .item .info .benefits_1 {
   position: absolute;
   top: 205px;
   right: 600px;
@@ -498,7 +546,7 @@ datalist {
   font-weight: 500;
   font-size: 16px;
   line-height: 200%;
-  color: #2A2E33;
+  color: #2a2e33;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -569,7 +617,7 @@ datalist {
   letter-spacing: -0.01em;
   z-index: 20;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 
 .section_4 .sub_title {
@@ -581,8 +629,149 @@ datalist {
   backdrop-filter: blur(15px);
   border-radius: 50px;
 }
+.section_4 .calculator .wrapper_items {
+  display: flex;
+  justify-content: space-between;
+}
+.section_4 .calculator .wrapper_items .item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section_4 .calculator .wrapper_items .item .summ {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section_4 .calculator .wrapper_items .item .summ span {
+  font-feature-settings: "pnum" on, "lnum" on;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  color: #2a2e33;
+}
+.section_4 .calculator .wrapper_items .item .summ .summ_box {
+  background: linear-gradient(90deg, #eae0ea 0%, #ebebef 100%);
+  border-radius: 20px;
+  display: flex;
+  gap: 56px;
+  align-items: center;
+  padding: 15px 25px;
+}
+.section_4 .calculator .wrapper_items .item .summ .summ_box span {
+  color: #2a2e33;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.015em;
+}
+.section_4 .calculator .wrapper_items .item .summ .summ_box p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #aba3bc;
+  letter-spacing: 0.015em;
+}
+.section_4 .calculator .wrapper_items .item .wrapper {
+  position: relative;
+  z-index: 5;
+  width: 500px;
+}
+.section_4 .calculator .wrapper_items .item .wrapper datalist {
+  margin-top: 10px;
+  position: absolute;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.section_4 .calculator .wrapper_items .item .wrapper option {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  color: #aba3bc;
+  /* identical to box height, or 29px */
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.section_4 .calculator .wrapper_items .item .wrapper .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  /*     background: #1B2FB2; */
+  background-color: #ccc;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin: 12px 0px 5px 0px;
+  cursor: pointer;
+  z-index: 100;
+}
+.section_4 .calculator .wrapper_items .item .wrapper .progress {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 10px;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  top: 50%;
+  border-radius: 20px;
+}
+.section_4 .calculator .wrapper_items .item .wrapper .slider:hover {
+  opacity: 1;
+}
+.section_4 .calculator .wrapper_items .item .wrapper .slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  /* white */
+  border: 10px solid #ffffff;
+  box-shadow: 0px 3px 5px rgba(14, 30, 54, 0.1);
+  z-index: 100000;
+  margin-top: -20px;
+}
+.section_4 .calculator .line {
+  width: 1040px;
+  height: 1px;
+  background: #dad3e8;
+  border-radius: 20px;
+  margin-top: 80px;
+}
 .section_4 .calculator .predlojeniya {
   margin-top: 20px;
+}
+.section_4 .calculator .predlojeniya .wrapper {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section_4 .calculator .predlojeniya .soglasie {
+  width: 1040px;
+  display: flex;
+  justify-content: end;
+}
+.section_4 .calculator .predlojeniya .soglasie div {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #aba3bc;
+  margin-top: 10px;
+  max-width: 310px;
+  text-align: right;
 }
 .section_4 .calculator .predlojeniya h3 {
   font-family: "Gilroy";
@@ -595,12 +784,41 @@ datalist {
   letter-spacing: 0.015em;
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .section_4 .calculator .predlojeniya .info {
   display: flex;
-  gap: 69px;
-  margin-top: 30px;
+  gap: 60px;
+  align-items: end;
+}
+.section_4 .calculator .predlojeniya .info .item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.section_4 .calculator .predlojeniya .info .item .proz {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  text-align: start;
+}
+.section_4 .calculator .predlojeniya .info .item .proz span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.015em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #a259ff;
+}
+.section_4 .calculator .predlojeniya .info .item a {
+  margin: 0;
+}
+.section_4 .calculator .predlojeniya .info .item .number_input {
+  margin: 0;
 }
 .section_4 .calculator .predlojeniya .info span {
   font-family: "Raleway";
@@ -611,7 +829,7 @@ datalist {
   /* identical to box height, or 29px */
   font-feature-settings: "pnum" on, "lnum" on;
   /* gray */
-  color: #ABA3BC;
+  color: #aba3bc;
 }
 .section_4 .calculator .predlojeniya .item {
   margin-top: 5px;
@@ -631,7 +849,7 @@ datalist {
   letter-spacing: 0.015em;
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .section_4 .calculator .predlojeniya .item .proz {
   font-family: "Gilroy";
@@ -643,7 +861,7 @@ datalist {
   letter-spacing: 0.015em;
   font-feature-settings: "pnum" on, "lnum" on;
   margin-left: 81px;
-  color: #A259FF;
+  color: #a259ff;
 }
 .section_4 .calculator .predlojeniya .item a {
   font-family: "Gilroy";
@@ -657,160 +875,52 @@ datalist {
   text-decoration-line: underline;
   font-feature-settings: "pnum" on, "lnum" on;
   /* gray */
-  color: #ABA3BC;
+  color: #aba3bc;
 }
 .section_4 .calculator .predlojeniya .item .input {
-  background: linear-gradient(90deg, #ECEDF3 0%, #ECE6EB 100%);
+  background: linear-gradient(90deg, #ecedf3 0%, #ece6eb 100%);
   margin-left: 46px;
 }
 .section_4 .calculator .predlojeniya .item .btn {
   margin-left: 16px;
 }
-.section_4 .calculator .predlojeniya .soglasie {
-  width: 1040px;
-  display: flex;
-  justify-content: end;
+.section_4 .predvaritel {
+  margin-top: 10px;
+  margin-left: 60px;
 }
-.section_4 .calculator .predlojeniya .soglasie div {
+.section_4 .predvaritel span {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 16px;
+  line-height: 180%;
+  /* identical to box height, or 29px */
   font-feature-settings: "pnum" on, "lnum" on;
-  color: #ABA3BC;
-  margin-top: 10px;
-  max-width: 310px;
-  text-align: right;
+  color: #70697d;
 }
-.section_4 .calculator .line {
-  width: 1040px;
-  height: 1px;
-  background: #DAD3E8;
-  border-radius: 20px;
-  margin-top: 80px;
-}
-.section_4 .calculator .inputs {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-.section_4 .calculator .inputs .wrapper {
+.section_4 .wrapper_1 {
   position: relative;
   z-index: 5;
   width: 500px;
 }
-.section_4 .calculator .inputs .wrapper .slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 3px;
-  /*     background: #1B2FB2; */
-  background-color: #ccc;
-  outline: none;
-  -webkit-transition: 0.2s;
-  transition: opacity 0.2s;
-  margin: 12px 0px 5px 0px;
-  cursor: pointer;
-  z-index: 100;
-}
-.section_4 .calculator .inputs .wrapper .progress {
-  position: absolute;
-  content: "";
-  width: 25%;
-  height: 10px;
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
-  top: 50%;
-  border-radius: 20px;
-}
-.section_4 .calculator .inputs .wrapper .slider:hover {
-  opacity: 1;
-}
-.section_4 .calculator .inputs .wrapper .slider::-webkit-slider-thumb {
-  appearance: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
-  /* white */
-  border: 10px solid #FFFFFF;
-  box-shadow: 0px 3px 5px rgba(14, 30, 54, 0.1);
-  position: inherit;
-  z-index: 100000;
-  margin-top: -20px;
-}
-.section_4 .calculator .inputs datalist {
+.section_4 .wrapper_1 datalist {
   margin-top: 10px;
   position: absolute;
   width: 500px;
   display: flex;
   justify-content: space-between;
 }
-.section_4 .calculator .inputs option {
+.section_4 .wrapper_1 option {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 180%;
-  color: #ABA3BC;
+  color: #aba3bc;
   /* identical to box height, or 29px */
   font-feature-settings: "pnum" on, "lnum" on;
 }
-.section_4 .calculator .sum {
-  display: flex;
-  align-items: center;
-  gap: 300px;
-  margin-bottom: 40px;
-}
-.section_4 .calculator .sum .item {
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.section_4 .calculator .sum .item span {
-  font-feature-settings: "pnum" on, "lnum" on;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 180%;
-  color: #2A2E33;
-}
-.section_4 .calculator .sum .item .summ_box {
-  background: linear-gradient(90deg, #EAE0EA 0%, #EBEBEF 100%);
-  border-radius: 20px;
-  display: flex;
-  gap: 56px;
-  align-items: center;
-  padding: 15px 25px;
-}
-.section_4 .calculator .sum .item .summ_box span {
-  color: #2A2E33;
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.015em;
-}
-.section_4 .calculator .sum .item .summ_box p {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  color: #ABA3BC;
-  letter-spacing: 0.015em;
-}
-
-.wrapper_1 {
-  position: relative;
-  z-index: 5;
-  width: 500px;
-}
-.wrapper_1 .slider_1 {
+.section_4 .wrapper_1 .slider_1 {
   -webkit-appearance: none;
   width: 100%;
   height: 3px;
@@ -823,26 +933,26 @@ datalist {
   cursor: pointer;
   z-index: 100;
 }
-.wrapper_1 .progress_1 {
+.section_4 .wrapper_1 .progress_1 {
   position: absolute;
   content: "";
-  width: 50%;
+  width: 60%;
   height: 10px;
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   top: 45%;
   border-radius: 20px;
 }
-.wrapper_1 .slider_1:hover {
+.section_4 .wrapper_1 .slider_1:hover {
   opacity: 1;
 }
-.wrapper_1 .slider_1::-webkit-slider-thumb {
+.section_4 .wrapper_1 .slider_1::-webkit-slider-thumb {
   appearance: none;
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   /* white */
-  border: 10px solid #FFFFFF;
+  border: 10px solid #ffffff;
   box-shadow: 0px 3px 5px rgba(14, 30, 54, 0.1);
   margin-top: -20px;
   z-index: 100000;
@@ -854,7 +964,7 @@ datalist {
 }
 .section_6 .about_us {
   padding: 90px 100px;
-  background: #E5E8EE;
+  background: #e5e8ee;
   border-radius: 50px;
 }
 .section_6 .about_us .sub_title {
@@ -877,7 +987,7 @@ datalist {
   text-align: center;
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .section_6 .about_us .items {
   display: flex;
@@ -901,11 +1011,10 @@ datalist {
   font-weight: 500;
   font-size: 16px;
   line-height: 180%;
-  width: 374px;
   /* or 29px */
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .section_6 .about_us .items .item {
   background: rgba(255, 255, 255, 0.5);
@@ -926,7 +1035,7 @@ datalist {
   /* or 29px */
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .section_6 .about_us .items .item .top {
   display: flex;
@@ -942,7 +1051,7 @@ datalist {
   /* or 32px */
   letter-spacing: -0.01em;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .section_6 .about_us .items .item p {
   margin: 0;
@@ -954,10 +1063,9 @@ datalist {
   /* identical to box height, or 29px */
   font-feature-settings: "pnum" on, "lnum" on;
   /* main */
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   text-fill-color: transparent;
 }
 
@@ -979,7 +1087,7 @@ datalist {
 .section_7 .item .wrapper .left {
   position: relative;
   padding: 30px 27px 52px 40px;
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   border-radius: 30px;
 }
 .section_7 .item .wrapper .left .btn-default {
@@ -998,7 +1106,7 @@ datalist {
   /* or 29px */
   font-feature-settings: "pnum" on, "lnum" on;
   /* white */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .section_7 .item .wrapper .right p {
   font-family: "Raleway";
@@ -1009,10 +1117,10 @@ datalist {
   /* or 29px */
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .section_7 .item .wrapper .right p span {
-  color: #ABA3BC;
+  color: #aba3bc;
 }
 
 .fin-support {
@@ -1040,7 +1148,6 @@ datalist {
   background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .fin-support .content .item {
@@ -1074,7 +1181,7 @@ datalist {
   display: block;
 }
 .fin-support .content .item:hover p {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .fin-support .content .item img {
   max-width: 100px;
@@ -1102,7 +1209,7 @@ datalist {
   text-align: center;
   letter-spacing: -0.01em;
   /* white */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .fin-support .content .text-container {
   background: #e5e8ee;
@@ -1134,7 +1241,7 @@ datalist {
   /* or 32px */
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .fin-support .content .text-container-bottom {
   background: #e5e8ee;
@@ -1151,10 +1258,23 @@ datalist {
 
 .section_8 {
   margin-top: 150px;
+  margin-bottom: 120px;
 }
 .section_8 .item {
   display: flex;
   gap: 40px;
+  justify-content: space-between;
+}
+.section_8 .item .right {
+  position: relative;
+}
+.section_8 .item .right .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(236, 239, 244, 0) 63.76%, #eceff4 85.66%);
+  z-index: 1000;
+  pointer-events: none;
 }
 .section_8 .item .left p {
   margin-top: 300px;
@@ -1167,15 +1287,16 @@ datalist {
   /* or 29px */
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .section_8 .item .left .btn {
-  width: 290px;
+  width: 292px;
   margin-top: 45px;
-  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   border-radius: 20px 20px 20px 1px;
 }
 .section_8 .item .messages {
+  position: relative;
   padding-right: 20px;
   height: 600px;
   overflow-y: scroll; /* прокрутка по вертикали */
@@ -1188,7 +1309,7 @@ datalist {
   border-radius: 20px;
 }
 .section_8 .item .messages::-webkit-scrollbar-thumb {
-  background: #ABA3BC;
+  background: #aba3bc;
   border-radius: 20px;
 }
 .section_8 .item .messages .wrapper {
@@ -1212,12 +1333,12 @@ datalist {
   /* or 24px */
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .section_8 .item .messages .wrapper .me {
   width: 625px;
   padding: 20px 30px;
-  background: #2A2E33;
+  background: #2a2e33;
   border-radius: 20px 20px 20px 0px;
   font-family: "Raleway";
   font-style: normal;
@@ -1226,7 +1347,7 @@ datalist {
   line-height: 150%;
   /* or 24px */
   font-feature-settings: "pnum" on, "lnum" on;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .section_8 .item .messages .wrapper .me span {
   color: #777777;
@@ -1235,7 +1356,7 @@ datalist {
 .footer {
   padding-top: 20px;
   padding-bottom: 60px;
-  background: #2A2E33;
+  background: #2a2e33;
   margin-top: 120px;
 }
 .footer .item .top {
@@ -1244,12 +1365,30 @@ datalist {
   align-items: center;
   justify-content: space-between;
 }
+.footer .item .top .logo_footer {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.footer .item .top .logo_footer span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  /* or 19px */
+  display: flex;
+  align-items: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #aaaaaa;
+}
 .footer .item .top .links {
   display: flex;
   align-items: center;
   gap: 60px;
 }
 .footer .item .top .links a {
+  position: relative;
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
@@ -1261,7 +1400,22 @@ datalist {
   align-items: center;
   text-align: right;
   font-feature-settings: "pnum" on, "lnum" on;
-  color: #AAAAAA;
+  color: #aaaaaa;
+}
+.footer .item .top .links a:after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 3px; /*задаём ширину линии*/
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  content: "";
+  transition: width 0.3s ease-out;
+  border-radius: 10px; /*задаём время анимации*/
+}
+.footer .item .top .links a:hover:after, .footer .item .top .links a:focus:after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 .footer .item .middle .wrapper {
   display: flex;
@@ -1287,7 +1441,7 @@ datalist {
   display: flex;
   align-items: center;
   font-feature-settings: "pnum" on, "lnum" on;
-  color: #AAAAAA;
+  color: #aaaaaa;
 }
 .footer .item .middle .wrapper .info_right {
   display: flex;
@@ -1297,6 +1451,9 @@ datalist {
 .footer .item .middle .wrapper .info_right .links {
   display: flex;
   gap: 15px;
+}
+.footer .item .middle .wrapper .info_right .links a {
+  text-decoration: none;
 }
 .footer .item .middle .wrapper .info_right span {
   font-family: "Raleway";
@@ -1308,7 +1465,7 @@ datalist {
   display: flex;
   align-items: center;
   font-feature-settings: "pnum" on, "lnum" on;
-  color: #AAAAAA;
+  color: #aaaaaa;
 }
 .footer .item .bottom {
   margin-top: 56px;
@@ -1325,7 +1482,7 @@ datalist {
   /* or 29px */
   width: 744px;
   font-feature-settings: "pnum" on, "lnum" on;
-  color: #5C6065;
+  color: #5c6065;
 }
 
 .number_input {
@@ -1341,6 +1498,389 @@ datalist {
   color: #aba3bc;
   mix-blend-mode: normal;
   max-width: 240px;
+}
+
+.section_message_mobile {
+  display: none;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  /* Скрыть изображения по умолчанию */
+  /* Вперед иназад кнопки */
+  /* Точки/пули/индикаторы */
+  /* Исчезающая анимация */
+}
+.section_message_mobile .slideshow-container {
+  margin-top: 30px;
+  max-width: 300;
+  margin: auto;
+}
+.section_message_mobile .item {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section_message_mobile .item_you {
+  padding: 20px;
+  background: #2a2e33;
+  border-radius: 20px 20px 20px 0px;
+}
+.section_message_mobile .item_you span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #fff;
+}
+.section_message_mobile .item_you span p {
+  color: #777777;
+}
+.section_message_mobile .wrapper_dots_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+.section_message_mobile .wrapper_dots_btn div {
+  display: flex;
+  align-items: center;
+}
+.section_message_mobile .item_me {
+  padding: 20px;
+  border-radius: 20px 20px 0px 20px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+}
+.section_message_mobile .item_me span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  width: 260px;
+  /* or 24px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* black */
+  color: #2a2e33;
+}
+.section_message_mobile .mySlides {
+  display: none;
+}
+.section_message_mobile .prev,
+.section_message_mobile .next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+  width: 70px;
+  height: 70px;
+}
+.section_message_mobile .prev span,
+.section_message_mobile .next span {
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.section_message_mobile .dot,
+.section_message_mobile .dot_slide_2 {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #aba3bc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.section_message_mobile .active {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+}
+.section_message_mobile .dot:hover {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+}
+.section_message_mobile .dot_slide_2:hover {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+}
+.section_message_mobile .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.adaptiv_header {
+  display: none;
+}
+
+.sub_hidden {
+  display: none;
+}
+
+.rigth_image {
+  width: 595px;
+}
+
+.zaimi_pod_zalog {
+  margin-bottom: 120px;
+}
+.zaimi_pod_zalog .items {
+  margin-top: 68px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.zaimi_pod_zalog .items .item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.zaimi_pod_zalog .items .item .info {
+  margin-left: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.zaimi_pod_zalog .items .item .info span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* gray */
+  color: #aba3bc;
+  width: 411px;
+}
+.zaimi_pod_zalog .items .item .left {
+  border-radius: 20px;
+}
+.zaimi_pod_zalog .items .item .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+  height: 220px;
+  padding: 20px;
+  background: #e5e8ee;
+  border-radius: 20px;
+}
+.zaimi_pod_zalog .items .item .right .hover_item {
+  display: none;
+}
+.zaimi_pod_zalog .items .item .right .txt_hover {
+  display: none;
+}
+.zaimi_pod_zalog .items .item .right span {
+  width: 224px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* black */
+  color: #2a2e33;
+}
+.zaimi_pod_zalog .items .item .right .txt p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  /* or 29px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* black */
+  color: #2a2e33;
+}
+.zaimi_pod_zalog .items .item .right .txt span {
+  font-size: 28px;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.zaimi_pod_zalog .items .item .right:hover {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+}
+.zaimi_pod_zalog .items .item .right:hover span {
+  display: none;
+}
+.zaimi_pod_zalog .items .item .right:hover .txt {
+  display: none;
+}
+.zaimi_pod_zalog .items .item .right:hover .hover_item {
+  display: block;
+}
+.zaimi_pod_zalog .items .item .right:hover .txt_hover {
+  display: block;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* white */
+  color: #ffffff;
+}
+
+.conditions .items-container .text {
+  margin: 20px 0;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 125%;
+  /* identical to box height, or 45px */
+  letter-spacing: -0.01em;
+  /* black */
+  color: #2a2e33;
+}
+
+.fin-support .sub_title {
+  margin-bottom: 50px;
+}
+.fin-support .content .item_txt {
+  padding: 34px 40px;
+  background: #e5e8ee;
+  border-radius: 30px;
+}
+.fin-support .content .item_txt span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  /* or 32px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* black */
+  color: #2a2e33;
+  width: 681px;
+}
+
+.block_1_absolute {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
+.pod_zalog_kv_sec_6 .items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pod_zalog_kv_sec_6 .items .item_txt {
+  padding: 22px;
+}
+.pod_zalog_kv_sec_6 .items .item_txt span {
+  max-width: 376px;
+}
+
+.fz_36 {
+  font-size: 36px;
+  width: 1143px;
+}
+
+.refinansiryem {
+  margin-bottom: 120px;
+}
+.refinansiryem .sub_title {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.refinansiryem .items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 35px 80px;
+  background: #E5E8EE;
+  border-radius: 50px;
+}
+.refinansiryem .items .item {
+  width: 460px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.refinansiryem .items .item span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  /* or 29px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* black */
+  color: #2A2E33;
+}
+
+.vida4a_pod_zalog_kv {
+  margin-bottom: 120px;
+}
+.vida4a_pod_zalog_kv .item {
+  padding: 41px 60px 50px 60px;
+  background: #E5E8EE;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.vida4a_pod_zalog_kv .item .top {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.vida4a_pod_zalog_kv .item .top .sub_title {
+  font-size: 36px;
+}
+.vida4a_pod_zalog_kv .item .bottom p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  /* or 32px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* black */
+  color: #2A2E33;
 }
 
 /*# sourceMappingURL=main.css.map */

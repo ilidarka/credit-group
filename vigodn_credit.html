@@ -5,15 +5,24 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/refinansing/refinancing.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/pop-up.css" />
+
+    <link rel="stylesheet" href="css/menu_mobile/menu.css">
+    <link rel="stylesheet" href="css/pop-up/pop-up.css">
+    <link rel="stylesheet" href="css/menu_mobile/menu.css">
+    <link rel="stylesheet" href="css/Slider/slider.css">
     <link rel="stylesheet" href="font/stylesheet.css" />
-    <link rel="stylesheet" href="css/refinancing.css" />
-    <link rel="stylesheet" href="css/vigodn_credit.css" />
-    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/vogodn_credit/vigodn_credit.css" />
+    <link rel="stylesheet" href="css/adaptiv.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/refinansing_media/media.css" />
+
+
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <title>Tle</title>
   </head>
   <body>
     <div class="popup">
@@ -22,13 +31,13 @@
           <img
             id="popup__close"
             class="popup__close"
-            src="/img/pop-up/tag-cross.svg"
+            src="./img/pop-up/tag-cross.svg"
             alt=""
           />
 
           <div class="popup_info">
             <div class="img-container">
-              <img src="/img/pop-up/manager.svg" alt="" />
+              <img src="./img/pop-up/manager.svg" alt="" />
             </div>
             <div class="title">
               <h1>Оставьте заявку</h1>
@@ -84,8 +93,12 @@
             </div>
             <div class="info_right">
               <div class="links">
-                <img src="img/telegram_logo.svg" alt="" />
-                <img src="img/whatsapp_logo.svg" alt="" />
+                <a href="#">
+                  <img src="img/telegram_logo.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="img/whatsapp_logo.svg" alt="" />
+                </a>
               </div>
               <span>info@kreditgroup.ru</span>
             </div>
@@ -120,7 +133,7 @@
                 <img src="img/chevron-down.svg" alt="" />
               </div>
               <a href="#" class="item dropbtn"></a>
-              <div id="myDropdown" class="dropdown-content">
+              <div id="myDropdown" class="dropdown-content drop">
                 <a href="" class="item">Кредиты под залог автомобиля</a>
                 <a href="" class="item">Рефинансирование</a>
                 <a href="" class="item">Кредиты с плохой кредитной историей</a>
@@ -139,52 +152,141 @@
         </div>
       </div>
     </header>
-    <section class="section_1">
+    <div class="adaptiv_header">
       <div class="container">
-        <div class="wrapper">
-          <div class="info">
-            <h1 class="title">
-              Выгодные кредиты и займы <br />
-              <span>под залог автомобиля</span>
+        <div id="myNav" class="overlay">
+          <div class="overlay-content">
+            <div class="container">
+
+            <div class="top">
+              <div class="wrapper">
+                <img src="img/logo_adaptiv_header.svg" alt="">
+                <span>Ведущий кредитный брокер в Москве</span>
+              </div>
+              <img onclick="closeNav()" src="img/pop-up/tag-cross.svg"
+              alt="">
+            </div>
+
+            <div class="links">
+              <a href="#" class="link">О компании</a>
+              <a href="#" class="link">Условия</a>
+              <a href="#" class="link">База знаний</a>
+              <a href="#" class="link">Новости</a>
+              <a href="#" class="link">Контакты</a>
+            </div>
+            <div class="line"></div>
+            <div class="secondary_menu">
+              <div class="container">
+                <div class="wrapper">
+                  <div class="dropdown">
+                    <div class="wrapp_item">
+                      <div onclick="drop_adaptiv()" class="item dropbtn">
+                        Кредиты под залог недвижимости
+                      </div>
+                      <img src="img/chevron-down.svg" alt="" />
+                    </div>
+                    <a href="#" class="item dropbtn"></a>
+                    <div id="myDropdown" class="dropdown-content drop_adaptiv">
+                      <a href="" class="item">Кредиты под залог автомобиля</a>
+                      <a href="" class="item">Рефинансирование</a>
+                      <a href="" class="item">Кредиты с плохой кредитной историей</a>
+                      <a href="" class="item">Кредиты под залог земельного участка</a>
+                      <a href="" class="item">Кредиты под залог дома, коттеджа</a>
+                      <a href="" class="item">Кредиты под залог дачи</a>
+                      <a href="" class="item"
+                        >Кредиты под залог коммерческой недвижемости</a
+                      >
+                    </div>
+                  </div>
+                  <a href="" class="item">Кредиты под залог автомобиля</a>
+                  <a href="" class="item">Рефинансирование</a>
+                  <a href="" class="item">Кредиты с плохой кредитной историей</a>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="item">
+                <img src="img/header_adaptiv/clock.svg" alt="">
+                <span>Ежедневно с 8:00-23:00</span>
+              </div>
+              <div class="item">
+                <img src="img/header_adaptiv/smartphone.svg" alt="">
+                <span>+7 (800) 888-88-88</span>
+              </div>
+              <div class="item item_phone">
+                <span>+7 (800) 888-88-88</span>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="img/header_adaptiv/telegram_logo.svg" alt="">
+                </a>
+                <a href="#">
+                  <img src="img/header_adaptiv/whatsapp_logo.svg" alt="">
+                </a>
+                <p>info@kreditgroup.ru</p>
+              </div>
+            </div>
+
+          </div>
+
+          </div>
+        </div>
+        
+        <div class="open_menu">
+          <div class="wrapper">
+            <img src="img/logo_adaptiv_header.svg" alt="">
+            <span>Ведущий кредитный брокер в Москве</span>
+          </div>
+          <img onclick="openNav()" src="img/header_adaptiv/menu.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <section class="main-section">
+      <div class="content">
+        <div class="left-container">
+          <div class="header">
+            <h1>
+              Рефинансирование<br />
+              кредитов и займов<br />
+              <span>под залог имущества</span>
             </h1>
-            <div class="spisok">
-              <div class="item">
-                <img src="./img/convinient/check.svg" alt="" />
-                <span>Решение и деньги за 30 минут</span>
-              </div>
-              <div class="item">
-                <img src="./img/convinient/check.svg" alt="" />
-                <span>Одобряем 98% заявок</span>
-              </div>
-              <div class="item">
-                <img src="./img/convinient/check.svg" alt="" />
-                <span>Без скрытых платежей, коммисий, штрафов</span>
-              </div>
-              <div class="item">
-                <img src="./img/convinient/check.svg" alt="" />
-                <span>Выдаем до 95% стоимости авто</span>
-              </div>
-            </div>
-            <div class="wrapper_btn">
-              <div class="btn-green">
-                <img src="img/vigodn_credit/whatsapp_logo.svg" alt="" />
-                <span>Оставить заявку</span>
-              </div>
-              <div class="online">
-                <div class="green_circle"></div>
-                <span>Мы онлайн</span>
-              </div>
-            </div>
-            <span class="whatsApp"> Ответим на любые вопросы в WhatsApp </span>
           </div>
-          <div class="img">
-            <img src="img/vigodn_credit/image.svg" alt="" />
-            <img
-              src="img/vigodn_credit/benefits_cards.svg"
-              alt=""
-              class="caption"
-            />
+          <ul>
+            <li>
+              <img src="./img/check.svg" alt="" />
+              <p>Объединим несколько займов в один</p>
+            </li>
+            <li>
+              <img src="./img/check.svg" alt="" />
+              <p>Увеличим срок выплат по кредиту</p>
+            </li>
+            <li>
+              <img src="./img/check.svg" alt="" />
+              <p>Уменьшим ежемесячный платеж и ставку</p>
+            </li>
+            <li>
+              <img src="./img/check.svg" alt="" />
+              <p>Закроем долги по ипотеке</p>
+            </li>
+          </ul>
+          <div class="bottom">
+            <div class="btn-container popup-trigger">
+              <img src="./img/whatsapp_logo.svg" alt="" />
+              <span>Оставить заявку</span>
+            </div>
+            <div class="online-container">
+              <div class="green-circle"></div>
+              <span>Мы онлайн</span>
+            </div>
           </div>
+          <div class="wats">
+            <span>
+              Ответим на любые вопросы <br> в WhatsApp
+            </span>
+          </div>
+        </div>
+        <div class="right-container">
+          <img src="img/vigodn_credit/main_img.svg" alt="" />
         </div>
       </div>
     </section>
@@ -230,6 +332,11 @@
               <span>Потребуется только паспорт, СТС и ПТС</span>
             </div>
           </div>
+          <div class="text_adaptiv">
+            <span>
+              Действуем исключительно в рамках законодательства РФ согласно закону ФЗ «О финансированной аренде (лизинге)» от 29.10.1998 №164-ФЗ
+            </span>
+          </div>
         </div>
       </div>
     </section>
@@ -239,85 +346,98 @@
           <span>Рассчитайте</span> ежемесячный платеж по кредиту
         </h2>
         <div class="calculator">
-          <div class="sum">
+          <div class="wrapper_items">
             <div class="item">
-              <span> Сумма займа </span>
-              <div class="summ_box">
-                <span>5 000 000</span>
-                <p>₽</p>
+              <div class="summ">
+                <span> Сумма займа </span>
+                <div class="summ_box">
+                  <span  class="value_calck_price">5 000 000</span>
+                  <p>₽</p>
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <span> Срок займа </span>
-              <div class="summ_box">
-                <span>19</span>
-                <p>месяцев</p>
-              </div>
-            </div>
-          </div>
-          <div class="inputs">
-            <div class="wrapper">
-              <input
-                list="range_list"
-                type="range"
-                min="0"
-                max="100"
-                value="25"
-                class="slider"
-              />
-              <datalist id="range_list">
-                <option>50 тыс</option>
-                <option>5 млн</option>
-                <option>10 млн</option>
-                <option>15 млн</option>
-                <option>20 млн</option>
-              </datalist>
+              <div class="wrapper">
+                <input
+                        onchange="inputPrice()"
+                        list="range_list"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="25"
+                        class="slider"
+                />
+                <datalist id="range_list">
+                  <option>50 тыс</option>
+                  <option class = "option_hide">5 млн</option>
+                  <option class = "option_hide">10 млн</option>
+                  <option class = "option_hide">15 млн</option>
+                  <option>20 млн</option>
+                </datalist>
 
-              <div class="progress"></div>
+                <div class="progress"></div>
+              </div>
             </div>
-            <div class="wrapper_1">
-              <input
-                list="range_list_1"
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="slider_1"
-              />
-              <datalist id="range_list_1">
-                <option>6 мес</option>
-                <option>12 мес</option>
-                <option>18 мес</option>
-                <option>24 мес</option>
-                <option>30 мес</option>
-              </datalist>
-              <div class="progress_1"></div>
+            <div class="item">
+              <div class="summ">
+                <span> Срок займа </span>
+                <div class="summ_box">
+                  <span  class="value_calk_srok">19</span>
+                  <p>месяцев</p>
+                </div>
+              </div>
+              <div class="wrapper_1">
+                <input
+                      onchange="inputSrok()"
+                        list="range_list_1"
+                        type="range"
+                        min=""
+                        max="30"
+                        value="19"
+                        class="slider_1"
+                />
+                <datalist id="range_list_1">
+                  <option>6 мес</option>
+                  <option class = "option_hide">12 мес</option>
+                  <option class = "option_hide">18 мес</option>
+                  <option class = "option_hide">24 мес</option>
+                  <option>30 мес</option>
+                </datalist>
+                <div class="progress_1"></div>
+              </div>
             </div>
           </div>
           <div class="line"></div>
           <div class="predlojeniya">
             <h3>Наше предложение</h3>
-            <div class="info">
-              <span>Ежемесячный платеж</span>
-              <span>Процентная ставка</span>
-            </div>
-            <div class="item">
-              <div class="price">268 421 ₽</div>
-              <div class="proz">2.0%</div>
-              <a href="">Предложить свою</a>
-              <form action="">
-                <input
-                  class="number_input"
-                  id="number_input"
-                  placeholder="+ 7 (---) --- -- --"
-                  type="text"
-                />
-              </form>
-              <div class="btn popup-trigger">
-                <img src="img/pocket.svg" alt="" />
-                <span>Оставить заявку</span>
+            <div class="wrapper">
+              <div class="info">
+                <div class="item">
+                  <span>Ежемесячный платеж</span>
+                  <div class="price">268 421 ₽</div>
+                </div>
+                <div class="item">
+                  <span>Процентная ставка</span>
+                  <div class="proz">
+                    <span>2.0%</span>
+                    <a href="">Предложить свою</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <form action="">
+                  <input
+                          class="number_input phoneInput"
+                          id="number_input"
+                          placeholder="+ 7 (---) --- -- --"
+                          type="text"
+                  />
+                </form>
+                <div class="btn popup-trigger">
+                  <img src="img/pocket.svg" alt="" />
+                  <span>Оставить заявку</span>
+                </div>
               </div>
             </div>
+
             <div class="soglasie">
               <div>
                 Отправляя заявку, я предоставляю согласие на обработку
@@ -325,6 +445,11 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="predvaritel">
+          <span>
+            *расчет предварительный, окончательная сумма платежа будет рассчитана после одобрения заявки
+          </span>
         </div>
       </div>
     </section>
@@ -450,6 +575,7 @@
                     oninput="DEB()"
                     id="input_check"
                     type="text"
+                    class="phoneInput"
                   />
                 </div>
               </div>
@@ -470,6 +596,15 @@
                   <img src="img/vigodn_credit/plus.svg" alt="" />
                   <span>Прикрепить еще</span>
                 </div>
+                <div class="btn_file_docs">
+                  <img src="img/vigodn_credit/paperclip.svg" alt="" />
+                  <span>Прикрепить документы</span>
+                </div>
+                <div class="docs_text">
+                  <span>Документы</span>
+                  <img src="img/vigodn_credit/info.svg" alt="">
+                </div>
+
               </div>
             </div>
           </div>
@@ -583,7 +718,7 @@
           <div class="right">
             <div class="wrapper">
               <input
-                class="number_input"
+                class="number_input phoneInput"
                 id="number_input"
                 placeholder="+ 7 (---) --- -- --"
                 type="text"
@@ -760,42 +895,46 @@
             </div>
             <img src="img/vigodn_credit/Москва%20и%20МО-01%20(1)%201.svg" alt="">
           </div>
-
-          <ul>
-            <li>
+            <ul>
+              <li>
+                  <img src="img/vigodn_credit/image%2025.svg" alt="">
+                  <div class="info">
+                      <span>Займ под авто</span>
+                      <p>Форд 2015 г. выпуска</p>
+                    <p>Выдали: 350.000 р под 6% на 2 года</p>
+                  </div>
+              </li>
+              <li>
                 <img src="img/vigodn_credit/image%2025.svg" alt="">
                 <div class="info">
-                    <span>Займ под авто</span>
-                    <p>Форд 2015 г. выпуска</p>
+                  <span>Займ под авто</span>
+                  <p>Форд 2015 г. выпуска</p>
                   <p>Выдали: 350.000 р под 6% на 2 года</p>
                 </div>
-            </li>
-            <li>
-              <img src="img/vigodn_credit/image%2025.svg" alt="">
-              <div class="info">
-                <span>Займ под авто</span>
-                <p>Форд 2015 г. выпуска</p>
-                <p>Выдали: 350.000 р под 6% на 2 года</p>
-              </div>
-            </li>
-            <li>
-              <img src="img/vigodn_credit/image%2025.svg" alt="">
-              <div class="info">
-                <span>Займ под авто</span>
-                <p>Форд 2015 г. выпуска</p>
-                <p>Выдали: 350.000 р под 6% на 2 года</p>
-              </div>
-            </li>
-            <li>
-              <img src="img/vigodn_credit/image%2025.svg" alt="">
-              <div class="info">
-                <span>Займ под авто</span>
-                <p>Форд 2015 г. выпуска</p>
-                <p>Выдали: 350.000 р под 6% на 2 года</p>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <img src="img/vigodn_credit/image%2025.svg" alt="">
+                <div class="info">
+                  <span>Займ под авто</span>
+                  <p>Форд 2015 г. выпуска</p>
+                  <p>Выдали: 350.000 р под 6% на 2 года</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/vigodn_credit/image%2025.svg" alt="">
+                <div class="info">
+                  <span>Займ под авто</span>
+                  <p>Форд 2015 г. выпуска</p>
+                  <p>Выдали: 350.000 р под 6% на 2 года</p>
+                </div>
+              </li>
+            </ul>
         </div>
+      </div>
+      <div class="btn_wrapper btn_slide_hide">
+        <button  class="control_prev">&#10094;</button>
+
+        <button  class="control_next">&#10095;</button>
       </div>
     </section>
     <section class="request mt_6">
@@ -809,7 +948,7 @@
         <div class="input-container">
           <form>
             <input
-                    id="number_input"
+                    id="number_input phoneInput"
                     placeholder="+ 7 (---) --- -- --"
                     type="text"
             />
@@ -847,18 +986,31 @@
         <div class="wrapper_btn">
           <button onclick="plusSlides(-1)">&#10094;</button>
           <button onclick="plusSlides(1)">&#10095;</button>
+        </div>
 
+        <div class="wrapper_dots_btn">
+          <button onclick="plusSlides(-1)">
+          <span>&#10094;</span>
+          </button>
+          <div class="dosts_slider">
+            <span class="dot_slide_2">
+            </span>
+            <span class="dot_slide_2">
+            </span>
+            <span class="dot_slide_2">
+            </span>
+          </div>
+          <button onclick="plusSlides(1)">
+          <span>
+            &#10095;
+          </span>
+          </button>
         </div>
 
       </div>
       <br>
 
       <!-- Точки/круги -->
-      <div class="dots" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
     </div>
   </section>
     <section class="section_8">
@@ -879,6 +1031,9 @@
               <span>Мне только спросить</span>
             </div>
           </div>
+          <div class="right">
+            <div class="shadow"></div>
+          
           <div class="messages">
             <div class="wrapper">
               <p class="you">
@@ -942,17 +1097,217 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </section>
+    <section class="section_message_mobile">
+      <div class="container">
+        <h2 class="sub_title">
+          <span>Часто задаваемые вопросы</span>
+        </h2>
+        <div class="slideshow-container">
+          <div class="slides_Mobile fade">
+            <div class="item">
+              <div class="item_me">
+                <span>Отказали в 5 банках, предположительно из-за большого количества незакрытых кредитов, Вы сможете помочь?</span>
+              </div>
+              <div class="item_you">
+                <span>
+                  <p>Ответ:</p> В 99% случаев мы одобряем заёмщиков с большой кредитной нагрузкой, кому банки уже отказывали.
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        
+          <div class="slides_Mobile fade">
+            <div class="item">
+              <div class="item_me">
+                <span>Отказали в 5 банках, предположительно из-за большого количества незакрытых кредитов, Вы сможете помочь?</span>
+              </div>
+              <div class="item_you">
+                <span>
+                  <p>Ответ:</p> В 99% случаев мы одобряем заёмщиков с большой кредитной нагрузкой, кому банки уже отказывали.
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        
+          <div class="slides_Mobile fade">
+            <div class="item">
+              <div class="item_me">
+                <span>Отказали в 5 банках, предположительно из-за большого количества незакрытых кредитов, Вы сможете помочь?</span>
+              </div>
+              <div class="item_you">
+                <span>
+                  <p>Ответ:</p> В 99% случаев мы одобряем заёмщиков с большой кредитной нагрузкой, кому банки уже отказывали.
+                </span>
+              </div>
+            </div>
+            
+          </div>
+          <div class="slides_Mobile fade">
+            <div class="item">
+              <div class="item_me">
+                <span>Отказали в 5 банках, предположительно из-за большого количества незакрытых кредитов, Вы сможете помочь?</span>
+              </div>
+              <div class="item_you">
+                <span>
+                  <p>Ответ:</p> В 99% случаев мы одобряем заёмщиков с большой кредитной нагрузкой, кому банки уже отказывали.
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        
+          <!-- Вперед и назад кнопки -->
+        </div>
+        <br>
+        
+        <!-- Точки/круги -->
+        <div style="text-align:center" class="wrapper_dots_btn">
+          <a class="prev" onclick="plus(-1)">
+            <span>&#10094;</span>
+          </a>
+          <div style="text-align:center">
+            <span class="dot" onclick="current(1)"></span>
+            <span class="dot" onclick="current(2)"></span>
+            <span class="dot" onclick="current(3)"></span>
+            <span class="dot" onclick="current(4)"></span>
+          </div>
+          <a class="next" onclick="plus(1)">
+          <span>
+            &#10095;
+          </span></a>
+        </div>
+        
+      </div>
+    </section>
+    <section class="tak_predlog">
+      <div class="container">
+        <h2 class="sub_title">
+          Также мы предлагаем
+        </h2>
+        <div class="items">
+          <a href="#" class="item">
+            <div class="image">
+              <img src="img/vigodn_credit/arrow-up-right.svg" alt="" class="item_img_hide">
+            </div>
+            <img src="img/zaimi/car2.svg" alt="" class="item_img_hide ">
+            <span>Кредиты под залог автомобиля/span>
+            <img src="img/vigodn_credit/arrow-up-right_hover.svg" alt="" class="item_block_img">
+            <p>Перейти</p>
+          </a>
+          <a href="#" class="item">
+            <div class="image">
+              <img src="img/vigodn_credit/arrow-up-right.svg" alt="" class="item_img_hide">
+            </div>
+            <img src="img/vigodn_credit/mortgage2.svg" alt="" class="item_img_hide ">
+            <span>Кредиты под залог недвижимости</span>
+            <img src="img/vigodn_credit/arrow-up-right_hover.svg" alt="" class="item_block_img">
+            <p>Перейти</p>
+          </a>
+          <a href="#" class="item">
+            <div class="image">
+              <img src="img/vigodn_credit/arrow-up-right.svg" alt="" class="item_img_hide">
+            </div>
+            <img src="img/vigodn_credit/without_docs2.svg" alt="" class="item_img_hide ">
+            <span>Кредиты без справок</span>
+            <img src="img/vigodn_credit/arrow-up-right_hover.svg" alt="" class="item_block_img">
+            <p>Перейти</p>
+          </a>
+          <a href="#" class="item">
+            <div class="image">
+              <img src="img/vigodn_credit/arrow-up-right.svg" alt="" class="item_img_hide">
+            </div>
+            <img src="img/vigodn_credit/calculator2.svg" alt="" class="item_img_hide ">
+            <span>Рефинансирование займов</span>
+            <img src="img/vigodn_credit/arrow-up-right_hover.svg" alt="" class="item_block_img">
+            <p>Перейти</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section_1">
+      <div class="container">
+        <div class="logos">
+          <img src="img/icon_partner/1.png" alt="" />
+          <img src="img/icon_partner/Sovcombank_logo.svg" alt="" />
+          <img src="img/icon_partner/MKB_logo.svg" alt="" />
+          <img src="img/icon_partner/Raiffeisen_Bank_logo.svg" alt="" />
+          <img src="img/icon_partner/YuniCredit_logo.svg" alt="" />
+        </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="item">
+          <div class="top">
+            <div class="logo_footer">
+              <img src="img/footer_logo.svg" alt="">
+              <span>Ведущий кредитный брокер в Москве</span>
+            </div>
+            <div class="links">
+              <a href="" class="link">О компании</a>
+              <a href="" class="link">Условия</a>
+              <a href="" class="link">База знаний</a>
+              <a href="" class="link">Новости</a>
+              <a href="" class="link">Контакты</a>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="wrapper">
+              <div class="info_left">
+                <div class="item">
+                  <img src="./img/clock.svg" alt="" />
+                  <span>Ежедневно с 8:00-23:00</span>
+                </div>
+                <div class="item">
+                  <img src="img/smartphone.svg" alt="" />
+                  <span>+7 (800) 888-88-88</span>
+                </div>
+                <div class="item item_phone">
+                  <span>+7 (800) 888-88-88</span>
+                </div>
+              </div>
+              <div class="info_right">
+                <div class="links">
+                  <a href="">
+                    <img src="img/telegram_logo.svg" alt="" />
+
+                  </a>
+                  <a href="">
+                    <img src="img/whatsapp_logo.svg" alt="" />
+
+                  </a>
+                </div>
+                <span>info@kreditgroup.ru</span>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <span
+              >Представленная информация не является публичной офертой,
+              определяемой положениями ст. 437 ГК Российской Федерации и носит
+              информационный характер.</span
+            >
+            <img src="img/gasfort_logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
-    <script src="js/inputCheck.js"></script>
-    <script src="js/dropdown.js"></script>
-    <script src="js/calk.js"></script>
-    <script src="js/pop-up.js"></script>
-    <script src="/js/inputmask.js"></script>
-    <script src="/js/number_input.js"></script>
-    <script src="/js/slider.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/calk.js"></script>
+    <script src="./js/pop-up.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/inputmask.js"></script>
+    <script src="./js/number_input.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/drop.js"></script>
+    <script src="./js/inputCheck.js"></script>
+    <script src="./js/phoneMaskScript.js"></script>
   </body>
 </html>

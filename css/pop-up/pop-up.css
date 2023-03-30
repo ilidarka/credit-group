@@ -1,0 +1,207 @@
+.pop-up_wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  padding: 30px 15px;
+  color: #000;
+  visibility: hidden;
+  transition: visibility 0.8s ease 0s;
+}
+
+.popup::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: opacity 0.8s ease 0s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.popup__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.popup__body {
+  height: 100%;
+  border-radius: 5px;
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
+}
+
+.popup__close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  z-index: 30;
+  border: none;
+  cursor: pointer;
+}
+
+.popup_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 90px;
+  background: #ffffff;
+  border-radius: 30px;
+  gap: 10px;
+  height: 490px;
+}
+.popup_info p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #aba3bc;
+}
+.popup_info .img-container img {
+  width: 100px;
+  height: 100px;
+}
+.popup_info .title {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+.popup_info .title h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 10px;
+}
+.popup_info .title p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.popup_info form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.popup_info form input {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 20px;
+  background: #f2eff9;
+  border-radius: 20px;
+}
+.popup_info form .btn-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background: #2a2e33;
+  border-radius: 20px 20px 20px 1px;
+  padding: 20px 35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.popup_info form .btn-container:hover {
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  border-radius: 20px;
+}
+.popup_info form .btn-container:active {
+  border-radius: 20px;
+}
+.popup_info form .btn-container img {
+  max-width: 15px;
+  max-height: 15px;
+  pointer-events: none;
+}
+.popup_info form .btn-container span {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.confirm_popup .title {
+  margin-bottom: 30px;
+}
+.confirm_popup .btn-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background: #2a2e33;
+  border-radius: 20px 20px 20px 1px;
+  padding: 20px 35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.confirm_popup .btn-container:hover {
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  border-radius: 20px;
+}
+.confirm_popup .btn-container:active {
+  border-radius: 20px;
+}
+.confirm_popup .btn-container img {
+  max-width: 15px;
+  max-height: 15px;
+  pointer-events: none;
+}
+.confirm_popup .btn-container span {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup.show {
+  visibility: visible;
+  overflow: auto;
+}
+
+.popup.show::before {
+  opacity: 1;
+}
+
+.popup.show .popup__body {
+  transform: scale(1);
+  transition: all 0.3s ease 0.2s;
+} 
+@media screen and (max-width: 550px) {
+  .popup_info {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+  .confirm_popup {
+    width: 300px;
+  }
+}/*# sourceMappingURL=pop-up.css.map */

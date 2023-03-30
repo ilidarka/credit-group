@@ -1,0 +1,47 @@
+@media screen and (max-width: 550px) {
+  .map {
+    margin-bottom: 30px;
+  }
+  .map .container {
+    margin: 0 10px;
+  }
+  .map .container .map-container iframe {
+    height: 400px;
+  }
+  .phone-numbers {
+    margin-bottom: 30px;
+  }
+  .phone-numbers .container {
+    margin: 0 10px;
+  }
+  .phone-numbers .container .numbers-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .phone-numbers .container .numbers-container .number img {
+    max-width: 24px;
+    max-height: 24px;
+  }
+  .phone-numbers .container .numbers-container .number p {
+    font-size: 24px;
+  }
+  .contact-buttons {
+    margin-bottom: 100px;
+  }
+  .contact-buttons .container {
+    margin: 0 10px;
+    flex-direction: column;
+  }
+  .contact-buttons .container .buttons-container {
+    flex-direction: column;
+  }
+  .contact-buttons .container .email-container {
+    text-align: center;
+  }
+  .contact-buttons .container .email-container p {
+    font-size: 24px;
+    line-height: 180%;
+  }
+}
+
+/*# sourceMappingURL=contacts-media.css.map */

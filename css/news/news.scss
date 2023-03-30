@@ -1,0 +1,203 @@
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.news-header {
+  margin-bottom: 70px;
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    h1 {
+      font-family: "Gilroy", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 115%;
+      letter-spacing: -0.01em;
+      color: #2a2e33;
+    }
+  }
+}
+
+/* ---------slides--------- */
+
+.slider {
+  display: block;
+  position: static;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.slider-wrapper {
+  display: block;
+  position: static;
+  max-width: 1160px;
+  margin: 0 auto;
+  // overflow: hidden;
+  margin-bottom: 70px;
+}
+
+.slide {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  text-align: left;
+  position: static;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 500ms linear;
+  .slider-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 560px;
+    width: 100%;
+    .item-img-container {
+      border-radius: 20px;
+      img {
+        border-radius: 20px;
+        width: 100%;
+      }
+    }
+    .item-text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px 20px;
+      background: #e5e8ee;
+      border-radius: 20px;
+      .item-btn-container {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 7px;
+        span {
+          font-family: "Gilroy", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.015em;
+          font-feature-settings: "pnum" on, "lnum" on;
+          background: linear-gradient(
+            100.92deg,
+            #a259ff 13.57%,
+            #ff6250 97.65%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      p {
+        font-family: "Raleway", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 180%;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #2a2e33;
+      }
+      .item-text-header {
+        h2 {
+          font-family: "Raleway", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 150%;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #2a2e33;
+        }
+      }
+    }
+  }
+}
+
+.slide.active {
+  display: flex !important;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+/* ---------buttons--------- */
+
+.nav-md {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-btn {
+  display: contents;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn img:active {
+  transform: scale(0.95);
+}
+
+.btn button:focus {
+  outline: none;
+}
+
+.btn button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.slider-pagination {
+  display: flex;
+  gap: 30px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.slider-pagination a {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  position: relative;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 200%;
+  color: #aba3bc;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.9;
+  -webkit-transition: all 0.21s ease-in;
+  -moz-transition: all 0.21s ease-in;
+  -ms-transition: all 0.21s ease-in;
+  transition: all 0.21s ease-in;
+}
+
+.slider-pagination a.current {
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.21s ease-in;
+  -moz-transition: all 0.21s ease-in;
+  -ms-transition: all 0.21s ease-in;
+  transition: all 0.21s ease-in;
+}
+
+.slider-previous {
+  transform: rotate(180deg);
+}

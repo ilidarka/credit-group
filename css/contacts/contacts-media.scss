@@ -1,0 +1,49 @@
+@media screen and (max-width: 550px) {
+  .map {
+    margin-bottom: 30px;
+    .container {
+      margin: 0 10px;
+      .map-container {
+        iframe {
+          height: 400px;
+        }
+      }
+    }
+  }
+  .phone-numbers {
+    margin-bottom: 30px;
+    .container {
+      margin: 0 10px;
+      .numbers-container {
+        flex-direction: column;
+        gap: 20px;
+        .number {
+          img {
+            max-width: 24px;
+            max-height: 24px;
+          }
+          p {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .contact-buttons {
+    margin-bottom: 100px;
+    .container {
+      margin: 0 10px;
+      flex-direction: column;
+      .buttons-container {
+        flex-direction: column;
+      }
+      .email-container {
+        text-align: center;
+        p {
+          font-size: 24px;
+          line-height: 180%;
+        }
+      }
+    }
+  }
+}

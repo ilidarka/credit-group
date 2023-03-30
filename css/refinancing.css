@@ -7,8 +7,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -249,6 +247,7 @@ h6 {
   position: relative;
   background: #e5e8ee;
   border-radius: 50px;
+  background: #e5e8ee;
   padding: 60px;
   width: 100%;
   gap: 40px;
@@ -269,7 +268,8 @@ h6 {
   width: 100%;
   padding: 20px;
   background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   border-radius: 20px;
   max-width: 460px;
 }
@@ -321,7 +321,8 @@ h6 {
 .conditions .content .header .right-container {
   padding: 20px 40px 20px 30px;
   background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   border-radius: 20px;
 }
 .conditions .content .header .right-container p {
@@ -399,10 +400,11 @@ h6 {
   font-feature-settings: "pnum" on, "lnum" on;
   padding: 30px;
   background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   border-radius: 30px;
   max-width: 360px;
-  min-height: 230px;
+  max-height: 230px;
 }
 .fin-support .content .item:hover {
   background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
@@ -463,7 +465,7 @@ h6 {
   /* identical to box height, or 45px */
   letter-spacing: -0.01em;
   /* black */
-  color: #2A2E33;
+  color: #2a2e33;
 }
 .help .content {
   max-width: 1160px;
@@ -606,7 +608,8 @@ h6 {
   gap: 30px;
   padding: 60px 40px;
   background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   border-radius: 50px;
   max-width: 560px;
 }
@@ -707,6 +710,4 @@ h6 {
   letter-spacing: 0.015em;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #ffffff;
-}
-
-/*# sourceMappingURL=refinancing.css.map */
+}/*# sourceMappingURL=refinancing.css.map */

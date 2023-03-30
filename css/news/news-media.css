@@ -1,0 +1,32 @@
+@media screen and (max-width: 550px) {
+  .news-header {
+    margin-bottom: 20px;
+  }
+  .news-header .container {
+    margin: 0 10px;
+  }
+  .news-header .container h1 {
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .slider {
+    margin-bottom: 100px;
+    max-height: none;
+  }
+  .slider .slider-wrapper {
+    margin: 0 10px;
+  }
+  .slider-pagination a {
+    font-size: 16px;
+  }
+  .nav-md {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .btn img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+/*# sourceMappingURL=news-media.css.map */

@@ -1,0 +1,255 @@
+@media screen and (max-width: 550px) {
+  .conditions-links {
+    margin-bottom: 20px;
+    .container {
+      font-size: 14px;
+    }
+  }
+  .conditions {
+    margin-bottom: 100px;
+    .container {
+      margin: 0 10px;
+      .header {
+        br {
+          display: none;
+        }
+        h1 {
+          font-size: 24px;
+          line-height: 31px;
+          margin-bottom: 20px;
+        }
+      }
+      .content {
+        border-radius: 30px;
+        padding: 20px;
+        .lists-container {
+          flex-direction: column;
+          gap: 20px;
+          margin-bottom: 30px;
+          ul {
+            li {
+              align-items: flex-start;
+              img {
+                margin-top: 4px;
+              }
+            }
+          }
+        }
+        .content-bottom {
+          flex-direction: column;
+          gap: 20px;
+          .img-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 158px;
+            text-align: center;
+          }
+          .text-container {
+            p {
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .property-conditions {
+    margin-bottom: 30px;
+    .container {
+      margin: 0 10px;
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+        .text-container {
+          h1 {
+            font-size: 24px;
+            line-height: 31px;
+          }
+          br {
+            display: none;
+          }
+        }
+      }
+      .content {
+        flex-direction: column;
+        padding: 20px 10px;
+        border-radius: 30px;
+        .left-column {
+          margin-bottom: 20px;
+          ul {
+            li {
+              justify-content: flex-start;
+              align-items: flex-start;
+              img {
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+        .right-column {
+          .column-header {
+            margin-bottom: 30px;
+          }
+          .items-container {
+            .column-item {
+              padding: 20px;
+              width: 100%;
+              gap: 5px;
+              border-radius: 20px;
+              h3 {
+                font-size: 14px;
+                line-height: 14px;
+              }
+              p {
+                font-size: 20px;
+                line-height: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .requirements {
+    .container {
+      margin: 0 10px;
+      .content {
+        flex-direction: column;
+        gap: 30px;
+        .documents-container {
+          .documents-header {
+            h2 {
+              font-size: 24px;
+              line-height: 31px;
+            }
+          }
+          .items-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .documents-item {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .request-button {
+    margin-bottom: 100px;
+    .container {
+      margin: 0 10px;
+      flex-direction: column;
+      gap: 10px;
+      .btn-container {
+        max-width: none;
+        width: 100%;
+      }
+    }
+  }
+  .car-conditions {
+    margin-bottom: 30px;
+    .container {
+      margin: 0 10px;
+      .header {
+        flex-direction: column;
+        margin-bottom: 30px;
+        align-items: flex-start;
+        .text-container {
+          h1 {
+            font-size: 24px;
+            line-height: 31px;
+          }
+        }
+      }
+      .content {
+        padding: 20px 10px;
+        flex-direction: column;
+        border-radius: 30px;
+        gap: 30px;
+        .right-column {
+          .items-container {
+            .column-item {
+              border-radius: 20px;
+              h3 {
+                font-size: 14px;
+                line-height: 14px;
+              }
+              p {
+                font-size: 20px;
+                line-height: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .car-requirements {
+    .container {
+      margin: 0 10px;
+      .content {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  }
+  .documents {
+    .container {
+      margin: 0 10px;
+      .documents-container {
+        .documents-header {
+          h2 {
+            font-size: 24px;
+            line-height: 31px;
+          }
+        }
+        .items-container {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          .documents-item {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .refinancing {
+    margin-bottom: 100px;
+    .container {
+      margin: 0 10px;
+      .header {
+        h1 {
+          font-size: 18px;
+          line-height: 27px;
+          margin-bottom: 30px;
+          br {
+            display: none;
+          }
+        }
+      }
+      .content {
+        padding: 20px 10px;
+        border-radius: 30px;
+        gap: 20px;
+        .content-header {
+          h2 {
+            font-size: 16px;
+          }
+        }
+        .lists-container {
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}

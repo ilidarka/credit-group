@@ -147,7 +147,8 @@
 .online_oformlenie .block {
   padding: 40px 60px;
   background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 50px;
 }
@@ -263,6 +264,12 @@
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
   color: #2A2E33;
+}
+.online_oformlenie .block .wrapper_inputs .left_content .item .input input::-moz-placeholder {
+  color: #C3BCD1;
+}
+.online_oformlenie .block .wrapper_inputs .left_content .item .input input:-ms-input-placeholder {
+  color: #C3BCD1;
 }
 .online_oformlenie .block .wrapper_inputs .left_content .item .input input::placeholder {
   color: #C3BCD1;
@@ -415,6 +422,4 @@
   display: flex;
   align-items: center;
   gap: 16px;
-}
-
-/*# sourceMappingURL=vigodn_credit.css.map */
+}/*# sourceMappingURL=vigodn_credit.css.map */

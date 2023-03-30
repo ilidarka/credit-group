@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/refinansing/refinancing.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/menu_mobile/menu.css" />
+    <link rel="stylesheet" href="css/pop-up/pop-up.css" />
+    <link rel="stylesheet" href="css/menu_mobile/menu.css" />
+    <link rel="stylesheet" href="font/stylesheet.css" />
+    <link rel="stylesheet" href="css/vogodn_credit/vigodn_credit.css" />
+    <link rel="stylesheet" href="css/adaptiv.css" />
+    <link rel="stylesheet" href="./css/refinansing_media/media.css" />
+    <link rel="stylesheet" href="./css/conditions/conditions.css" />
+    <link rel="stylesheet" href="./css/conditions/conditions-media.css" />
+    <link rel="stylesheet" href="./css/news/news.css" />
+    <link rel="stylesheet" href="./css/news/news-media.css" />
+    <link rel="stylesheet" href="./css/contacts/contacts.css" />
+    <link rel="stylesheet" href="./css/contacts/contacts-media.css" />
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font/stylesheet.css" />
+    <!-- scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+      integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script src="./js/dropdown.js" defer></script>
+    <script src="./js/calk.js" defer></script>
+    <script src="./js/pop-up.js" defer></script>
+    <script src="./js/inputmask.js" defer></script>
+    <script src="./js/number_input.js" defer></script>
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/drop.js" defer></script>
+    <script src="./js/phoneMaskScript.js" defer></script>
+    <script src="./js/pagination.js" defer></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header_contacts">
+        <div class="container">
+          <div class="wrapper">
+            <div class="info_left">
+              <div class="item">
+                <img src="img/clock.svg" alt="" />
+                <span>Ежедневно с 8:00-23:00</span>
+              </div>
+              <div class="item">
+                <img src="img/smartphone.svg" alt="" />
+                <span>+7 (800) 888-88-88</span>
+              </div>
+              <div class="item">
+                <span>+7 (800) 888-88-88</span>
+              </div>
+            </div>
+            <div class="info_right">
+              <div class="links">
+                <a href="#">
+                  <img src="img/telegram_logo.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="img/whatsapp_logo.svg" alt="" />
+                </a>
+              </div>
+              <span>info@kreditgroup.ru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_menu">
+        <div class="container">
+          <div class="wrapper">
+            <div class="info">
+              <img src="img/kredit-group_logo.svg" alt="" />
+              <span>Ведущий кредитный брокер в Москве</span>
+            </div>
+            <div class="links">
+              <a href="" class="link">О компании</a>
+              <a href="" class="link">Условия</a>
+              <a href="" class="link">База знаний</a>
+              <a href="" class="link">Новости</a>
+              <a href="" class="link">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondary_menu">
+        <div class="container">
+          <div class="wrapper">
+            <div class="dropdown">
+              <div class="wrapp_item">
+                <div onclick="Dropdown()" class="item dropbtn">
+                  Кредиты под залог недвижимости
+                </div>
+                <img src="img/chevron-down.svg" alt="" />
+              </div>
+              <a href="#" class="item dropbtn"></a>
+              <div id="myDropdown" class="dropdown-content drop">
+                <a href="" class="item">Кредиты под залог автомобиля</a>
+                <a href="" class="item">Рефинансирование</a>
+                <a href="" class="item">Кредиты с плохой кредитной историей</a>
+                <a href="" class="item">Кредиты под залог земельного участка</a>
+                <a href="" class="item">Кредиты под залог дома, коттеджа</a>
+                <a href="" class="item">Кредиты под залог дачи</a>
+                <a href="" class="item"
+                  >Кредиты под залог коммерческой недвижемости</a
+                >
+              </div>
+            </div>
+            <a href="" class="item">Кредиты под залог автомобиля</a>
+            <a href="" class="item">Рефинансирование</a>
+            <a href="" class="item">Кредиты с плохой кредитной историей</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="adaptiv_header">
+      <div class="container">
+        <div id="myNav" class="overlay">
+          <div class="overlay-content">
+            <div class="container">
+              <div class="top">
+                <div class="wrapper">
+                  <img src="img/logo_adaptiv_header.svg" alt="" />
+                  <span>Ведущий кредитный брокер в Москве</span>
+                </div>
+                <img
+                  onclick="closeNav()"
+                  src="img/pop-up/tag-cross.svg"
+                  alt=""
+                />
+              </div>
+
+              <div class="links">
+                <a href="#" class="link">О компании</a>
+                <a href="#" class="link">Условия</a>
+                <a href="#" class="link">База знаний</a>
+                <a href="#" class="link">Новости</a>
+                <a href="#" class="link">Контакты</a>
+              </div>
+              <div class="line"></div>
+              <div class="secondary_menu">
+                <div class="container">
+                  <div class="wrapper">
+                    <div class="dropdown">
+                      <div class="wrapp_item">
+                        <div onclick="drop_adaptiv()" class="item dropbtn">
+                          Кредиты под залог недвижимости
+                        </div>
+                        <img src="img/chevron-down.svg" alt="" />
+                      </div>
+                      <a href="#" class="item dropbtn"></a>
+                      <div
+                        id="myDropdown"
+                        class="dropdown-content drop_adaptiv"
+                      >
+                        <a href="" class="item">Кредиты под залог автомобиля</a>
+                        <a href="" class="item">Рефинансирование</a>
+                        <a href="" class="item"
+                          >Кредиты с плохой кредитной историей</a
+                        >
+                        <a href="" class="item"
+                          >Кредиты под залог земельного участка</a
+                        >
+                        <a href="" class="item"
+                          >Кредиты под залог дома, коттеджа</a
+                        >
+                        <a href="" class="item">Кредиты под залог дачи</a>
+                        <a href="" class="item"
+                          >Кредиты под залог коммерческой недвижемости</a
+                        >
+                      </div>
+                    </div>
+                    <a href="" class="item">Кредиты под залог автомобиля</a>
+                    <a href="" class="item">Рефинансирование</a>
+                    <a href="" class="item"
+                      >Кредиты с плохой кредитной историей</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="item">
+                  <img src="img/header_adaptiv/clock.svg" alt="" />
+                  <span>Ежедневно с 8:00-23:00</span>
+                </div>
+                <div class="item">
+                  <img src="img/header_adaptiv/smartphone.svg" alt="" />
+                  <span>+7 (800) 888-88-88</span>
+                </div>
+                <div class="item item_phone">
+                  <span>+7 (800) 888-88-88</span>
+                </div>
+                <div class="item">
+                  <a href="#">
+                    <img src="img/header_adaptiv/telegram_logo.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/header_adaptiv/whatsapp_logo.svg" alt="" />
+                  </a>
+                  <p>info@kreditgroup.ru</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="open_menu">
+          <div class="wrapper">
+            <img src="img/logo_adaptiv_header.svg" alt="" />
+            <span>Ведущий кредитный брокер в Москве</span>
+          </div>
+          <img onclick="openNav()" src="img/header_adaptiv/menu.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <section class="conditions-links">
+      <div class="container">
+        <a href="">Главная</a>
+        <span>></span>
+        <a href="">Контакты</a>
+      </div>
+    </section>
+    <section class="news-header">
+      <div class="container">
+        <h1>Контакты</h1>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
+        <div class="map-container" style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Яндекс Карты</a
+          ><a
+            href="https://yandex.by/maps/geo/moskva/53000094/?ll=37.433046%2C55.624966&utm_medium=mapframe&utm_source=maps&z=9.47"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Москва — Яндекс Карты</a
+          ><iframe
+            src="https://yandex.by/map-widget/v1/?ll=37.433046%2C55.624966&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.47"
+            width="100%"
+            height="300зч"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="phone-numbers">
+      <div class="container">
+        <div class="text-container">
+          <p>Ежедневно с 8:00-23:00</p>
+        </div>
+        <div class="numbers-container">
+          <div class="number">
+            <img src="./img/black-smartphone.svg" alt="" />
+            <p>+7 (800) 888-88-88</p>
+          </div>
+          <div class="number">
+            <img src="./img/black-smartphone.svg" alt="" />
+            <p>+7 (800) 888-88-88</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-buttons">
+      <div class="container">
+        <div class="buttons-container">
+          <div class="btn">
+            <img src="./img/telegram_logo.svg" alt="" />
+            <span>Мы в Telegram</span>
+          </div>
+          <div class="btn">
+            <img src="./img/whatsapp_logo.svg" alt="" />
+            <span>Мы в WhatsApp</span>
+          </div>
+        </div>
+        <div class="email-container">
+          <p>info@kreditgroup.ru</p>
+        </div>
+      </div>
+    </section>
+    <section class="credit_15_mins">
+      <div class="container">
+        <div class="item">
+          <div class="left">
+            <img src="img/vigodn_credit/time2%201.svg" alt="" />
+            <h2>Одобрим кредит <span>за 15 минут</span></h2>
+          </div>
+          <div class="right">
+            <div class="wrapper">
+              <input
+                class="number_input phoneInput"
+                id="number_input"
+                placeholder="+ 7 (---) --- -- --"
+                type="text"
+              />
+              <div class="btn popup-trigger">
+                <img src="img/pocket.svg" alt="" />
+                <span>Оставить заявку</span>
+              </div>
+            </div>
+            <p>
+              Отправляя заявку, я предоставляю согласие <br />
+              на обработку персональных данных
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_1">
+      <div class="container">
+        <div class="logos">
+          <img src="img/icon_partner/1.png" alt="" />
+          <img src="img/icon_partner/Sovcombank_logo.svg" alt="" />
+          <img src="img/icon_partner/MKB_logo.svg" alt="" />
+          <img src="img/icon_partner/Raiffeisen_Bank_logo.svg" alt="" />
+          <img src="img/icon_partner/YuniCredit_logo.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="item">
+          <div class="top">
+            <div class="logo_footer">
+              <img src="img/footer_logo.svg" alt="" />
+              <span>Ведущий кредитный брокер в Москве</span>
+            </div>
+            <div class="links">
+              <a href="" class="link">О компании</a>
+              <a href="" class="link">Условия</a>
+              <a href="" class="link">База знаний</a>
+              <a href="" class="link">Новости</a>
+              <a href="" class="link">Контакты</a>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="wrapper">
+              <div class="info_left">
+                <div class="item">
+                  <img src="./img/clock.svg" alt="" />
+                  <span>Ежедневно с 8:00-23:00</span>
+                </div>
+                <div class="item">
+                  <img src="img/smartphone.svg" alt="" />
+                  <span>+7 (800) 888-88-88</span>
+                </div>
+                <div class="item item_phone">
+                  <span>+7 (800) 888-88-88</span>
+                </div>
+              </div>
+              <div class="info_right">
+                <div class="links">
+                  <a href="">
+                    <img src="img/telegram_logo.svg" alt="" />
+                  </a>
+                  <a href="">
+                    <img src="img/whatsapp_logo.svg" alt="" />
+                  </a>
+                </div>
+                <span>info@kreditgroup.ru</span>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <span
+              >Представленная информация не является публичной офертой,
+              определяемой положениями ст. 437 ГК Российской Федерации и носит
+              информационный характер.</span
+            >
+            <img src="img/gasfort_logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

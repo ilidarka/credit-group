@@ -1,0 +1,94 @@
+.map {
+  margin-bottom: 50px;
+}
+.map .container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.map .container .map-container {
+  border-radius: 30px;
+}
+
+.phone-numbers {
+  margin-bottom: 80px;
+}
+.phone-numbers .container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.phone-numbers .container .text-container {
+  margin-bottom: 20px;
+}
+.phone-numbers .container .text-container p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #aba3bc;
+}
+.phone-numbers .container .numbers-container {
+  display: flex;
+  gap: 50px;
+}
+.phone-numbers .container .numbers-container .number {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.phone-numbers .container .numbers-container .number img {
+  max-width: 36px;
+  max-height: 36px;
+}
+.phone-numbers .container .numbers-container .number p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-buttons {
+  margin-bottom: 120px;
+}
+.contact-buttons .container {
+  display: flex;
+  gap: 40px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.contact-buttons .container .buttons-container {
+  display: flex;
+  gap: 40px;
+}
+.contact-buttons .container .buttons-container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.contact-buttons .container .buttons-container .btn:hover {
+  border-radius: 20px;
+}
+.contact-buttons .container .email-container p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 180%;
+  display: flex;
+  align-items: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #aba3bc;
+}
+
+/*# sourceMappingURL=contacts.css.map */

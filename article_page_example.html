@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/refinansing/refinancing.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/menu_mobile/menu.css">
+  <link rel="stylesheet" href="css/pop-up/pop-up.css">
+  <link rel="stylesheet" href="css/menu_mobile/menu.css">
+  <link rel="stylesheet" href="css/Slider/slider.css">
+  <link rel="stylesheet" href="font/stylesheet.css" />
+  <link rel="stylesheet" href="css/vogodn_credit/vigodn_credit.css" />
+  <link rel="stylesheet" href="./css/conditions/conditions.css">
+  <link rel="stylesheet" href="./css/conditions/conditions-media.css">
+  <link rel="stylesheet" href="css/about/about.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/refinansing_media/media.css" />
+  <link rel="stylesheet" href="css/about/about.css">
+  <link rel="stylesheet" href="css/adaptiv.css">
+
+
+
+
+  <meta charset="UTF-8" />
+  <title>Tle</title>
+</head>
+<body>
+<div class="popup">
+  <div class="popup__content">
+    <div class="popup__body">
+      <img
+        id="popup__close"
+        class="popup__close"
+        src="./img/pop-up/tag-cross.svg"
+        alt=""
+      />
+
+      <div class="popup_info">
+        <div class="img-container">
+          <img src="./img/pop-up/manager.svg" alt="" />
+        </div>
+        <div class="title">
+          <h1>Оставьте заявку</h1>
+          <p>и наш специалист свяжется с вами</p>
+        </div>
+        <form action="">
+          <input placeholder="Ваше имя" type="text" />
+          <input placeholder="Номер телефона или E-mail" type="text" />
+          <div class="btn-container confirm">
+            <img src="../refinancing/img/request/pocket.svg" alt="" />
+            <span>Оставить заявку</span>
+          </div>
+          <p>
+            Отправляя заявку, я предоставляю согласие<br />
+            на обработку персональных данных
+          </p>
+        </form>
+      </div>
+      <div class="popup_info confirm_popup hidden">
+        <div class="img-container">
+          <img src="../refinancing/img/pop-up/confirm2.svg" alt="" />
+        </div>
+        <div class="title">
+          <h1>Спасибо за заявку</h1>
+          <p>
+            Наш специалист свяжется с вами<br />
+            в ближайшее время
+          </p>
+        </div>
+        <div id="popup__close2" class="btn-container">
+          <span>На главную</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<header class="header">
+  <div class="header_contacts">
+    <div class="container">
+      <div class="wrapper">
+        <div class="info_left">
+          <div class="item">
+            <img src="img/clock.svg" alt="" />
+            <span>Ежедневно с 8:00-23:00</span>
+          </div>
+          <div class="item">
+            <img src="img/smartphone.svg" alt="" />
+            <span>+7 (800) 888-88-88</span>
+          </div>
+          <div class="item">
+            <span>+7 (800) 888-88-88</span>
+          </div>
+        </div>
+        <div class="info_right">
+          <div class="links">
+            <a href="#">
+              <img src="img/telegram_logo.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/whatsapp_logo.svg" alt="" />
+            </a>
+          </div>
+          <span>info@kreditgroup.ru</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main_menu">
+    <div class="container">
+      <div class="wrapper">
+        <div class="info">
+          <img src="img/kredit-group_logo.svg" alt="" />
+          <span>Ведущий кредитный брокер в Москве</span>
+        </div>
+        <div class="links">
+          <a href="" class="link">О компании</a>
+          <a href="" class="link">Условия</a>
+          <a href="" class="link">База знаний</a>
+          <a href="" class="link">Новости</a>
+          <a href="" class="link">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="secondary_menu">
+    <div class="container">
+      <div class="wrapper">
+        <div class="dropdown">
+          <div class="wrapp_item">
+            <div onclick="Dropdown()" class="item dropbtn">
+              Кредиты под залог недвижимости
+            </div>
+            <img src="img/chevron-down.svg" alt="" />
+          </div>
+          <a href="#" class="item dropbtn"></a>
+          <div id="myDropdown" class="dropdown-content drop">
+            <a href="" class="item">Кредиты под залог автомобиля</a>
+            <a href="" class="item">Рефинансирование</a>
+            <a href="" class="item">Кредиты с плохой кредитной историей</a>
+            <a href="" class="item">Кредиты под залог земельного участка</a>
+            <a href="" class="item">Кредиты под залог дома, коттеджа</a>
+            <a href="" class="item">Кредиты под залог дачи</a>
+            <a href="" class="item"
+            >Кредиты под залог коммерческой недвижемости</a
+            >
+          </div>
+        </div>
+        <a href="" class="item">Кредиты под залог автомобиля</a>
+        <a href="" class="item">Рефинансирование</a>
+        <a href="" class="item">Кредиты с плохой кредитной историей</a>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="adaptiv_header">
+  <div class="container">
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <div class="container">
+
+          <div class="top">
+            <div class="wrapper">
+              <img src="img/logo_adaptiv_header.svg" alt="">
+              <span>Ведущий кредитный брокер в Москве</span>
+            </div>
+            <img onclick="closeNav()" src="img/pop-up/tag-cross.svg"
+                 alt="">
+          </div>
+
+          <div class="links">
+            <a href="#" class="link">О компании</a>
+            <a href="#" class="link">Условия</a>
+            <a href="#" class="link">База знаний</a>
+            <a href="#" class="link">Новости</a>
+            <a href="#" class="link">Контакты</a>
+          </div>
+          <div class="line"></div>
+          <div class="secondary_menu">
+            <div class="container">
+              <div class="wrapper">
+                <div class="dropdown">
+                  <div class="wrapp_item">
+                    <div onclick="drop_adaptiv()" class="item dropbtn">
+                      Кредиты под залог недвижимости
+                    </div>
+                    <img src="img/chevron-down.svg" alt="" />
+                  </div>
+                  <a href="#" class="item dropbtn"></a>
+                  <div id="myDropdown" class="dropdown-content drop_adaptiv">
+                    <a href="" class="item">Кредиты под залог автомобиля</a>
+                    <a href="" class="item">Рефинансирование</a>
+                    <a href="" class="item">Кредиты с плохой кредитной историей</a>
+                    <a href="" class="item">Кредиты под залог земельного участка</a>
+                    <a href="" class="item">Кредиты под залог дома, коттеджа</a>
+                    <a href="" class="item">Кредиты под залог дачи</a>
+                    <a href="" class="item"
+                    >Кредиты под залог коммерческой недвижемости</a
+                    >
+                  </div>
+                </div>
+                <a href="" class="item">Кредиты под залог автомобиля</a>
+                <a href="" class="item">Рефинансирование</a>
+                <a href="" class="item">Кредиты с плохой кредитной историей</a>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="item">
+              <img src="img/header_adaptiv/clock.svg" alt="">
+              <span>Ежедневно с 8:00-23:00</span>
+            </div>
+            <div class="item">
+              <img src="img/header_adaptiv/smartphone.svg" alt="">
+              <span>+7 (800) 888-88-88</span>
+            </div>
+            <div class="item item_phone">
+              <span>+7 (800) 888-88-88</span>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="img/header_adaptiv/telegram_logo.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/header_adaptiv/whatsapp_logo.svg" alt="">
+              </a>
+              <p>info@kreditgroup.ru</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="open_menu">
+      <div class="wrapper">
+        <img src="img/logo_adaptiv_header.svg" alt="">
+        <span>Ведущий кредитный брокер в Москве</span>
+      </div>
+      <img onclick="openNav()" src="img/header_adaptiv/menu.svg" alt="">
+    </div>
+  </div>
+</div>
+<section class="conditions-links">
+  <div class="container">
+    <a href="">Главная</a>
+    <span>&gt;</span>
+    <a href="">Статья</a>
+    <span>&gt;</span>
+    <a href="">Только частотность поисковых запросов бодрит</a>
+
+
+  </div>
+</section>
+<section class="articles_main">
+  <div class="container">
+    <h2 class="sub_title_2">
+      <span>Банк отказал в кредите: что делать?</span>
+    </h2>
+    <p>Огромное количество россиян каждый год сталкивается с ситуацией, когда срочно нужен кредит, а банки отказывают один за другим. При этом, согласно действующим правилам, банки имеют полное, законное право не называть причину отказа, а просто констатировать факт.
+      <br> <br>
+      Мы подготовили для вас материал, объясняющий, как эта система работает. Из текста вы узнаете о причинах подобного. Расскажем и о том, что делать, если банк отказал в кредите, а деньги нужны все ещё. Ведь повод к взятию кредита никуда не делся.</p>
+    <div class="items">
+      <span>18 февраля 2023</span>
+      <span>Время прочтения: 5 минут</span>
+      <span>Автор статьи: Иванов Иван</span>
+    </div>
+    <img src="./img/about/image_1.svg" alt="">
+  </div>
+</section>
+<section class="oglavlenie">
+  <div class="container">
+    <div class="block">
+      <h2 class="sub_3">Оглавление</h2>
+      <ul>
+        <li>1. Причины</li>
+        <span>а. Кредитная история</span>
+        <br>
+        <span>b. Формально-документальная причина</span>
+        <br>
+        <span>c. Конкурентная причина</span>
+
+        <li>2. Где можно взять кредит</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+<section class="article_text">
+  <div class="container">
+    <h2 class="sub_title_2">
+      Банк отказывает в кредите: причины
+    </h2>
+    <p>Начнем с азов. Банк - не благотворительная организация. В его задачу входит организация бизнес-процессов. Проще говоря, зарабатывание денег для себя. Как бы благожелательно вам ни улыбались сотрудники, не стоит об этом забывать
+      <br> <br>
+      Второй фактор, который нужно учитывать, - банки крайне консервативны и не любят риски. Поэтому глобальных, наиболее распространенных причин, почему банки отказывают в кредите три:
+    </p>
+    <ol>
+      <li>
+        <span>Кредитная история. </span> Она не обязательно должна быть плохой, то есть содержать в себе длительные просрочки или проведенную ранее процедуру банкротства. Она может быть просто нулевая - то есть банк еще не имеето вас никаких сведений. Следовательно, не доверяет.
+      </li>
+      <li>
+        <span>Формально-документальная причина. </span> Как мы сказали, банки консервативны. Бесполезно объяснять, что низкая у вас только официальная зарплата, а на самом деле доходы в разы выше. Первая стадия оценка — стандартный анализ: ЗП, официальное трудоустройство, имеющиеся задолженности, налоговые или судебные, неоплаченные штрафы.
+      </li>
+      <li>
+        <span>Конкурентная причина. </span> Закон рынка прост: если есть спрос, предложение найдётся всегда. Банку с его громоздкой структурой невыгодно заниматься малыми суммами, он изначально под это не заточен. Эту нишу занимают так называемые микрофинансовые организации. И отношение у банков с МФО как у мушкетёров с гвардейцами кардинала. Поэтому, если вы частенько брали микрозаймы, на благосклонность со стороны банка можно не рассчитывать.
+      </li>
+      <p>
+        Это наиболее распространённые, ключевые причины, почему отказывают в кредите во всех банках. Все прочие, как правило, частности, производные от перечисленных.
+      </p>
+    </ol>
+    <h2 class="sub_title_2">
+      Банки отказывают: где можно взять кредит
+    </h2>
+    <p>Наиболее простой и логичный вывод - микрофинансовая организация. Но это палка о двух концах:</p>
+
+    <ul>
+      <li>
+        Конторы микрозаймов благотворительностью тоже не страдают. Они просто работают с другой группой рисков. И возможные риски они закладывают в итоговый процент. Поэтому там, где банк даст кредит под 3%, МФО поставит планку в 12-15. 
+      </li>
+      <li>
+        Кроме того, МФО обычно не имеет собственной службы безопасности. Не имея возможности вытребовать долг, они просто продают его за полцены коллекторам.
+      </li>
+      <li>
+        Обращаться же к подпольным ростовщикам - идея и вовсе не блестящая, чреватая серьезными проблемами для здоровья и жизни.
+      </li>
+      <p>
+        Так где взять кредит, если банк отказывает? Есть альтернативный путь, наиболее разумный по соотношению риск/результат. Если банк вас не знает или не верит вам за прошлые “грешки”, необходимо найти компанию, которую банк знает и которой доверяет
+      </p>
+      <p>
+        Итак, еще раз: как взять кредит, если банки отказывают? Обратиться в КредитГрупп. Мы те, кто предлагает решение. Все переговоры с банковской структурой мы возьмем на себя. 
+      </p>
+      <p>
+        Мы знаем, какие нюансы банк не афиширует, но принимает в расчет, будь то соцсети клиента или родственник-неплательщик, подправленная налоговая декларация или длинный перечень займов в МФО на мелкие расходы.
+      </p>
+      <p>
+        Выступая посредником, мы сможем добиться для вас положительного исхода и найдем устраивающее вас решение.
+      </p>
+    </ul>
+
+  </div>
+</section>
+<section class="news_links">
+  <div class="container">
+    <div class="block">
+      <div class="items">
+        <span>Поделиться</span>
+        <a href="">      <img src="./img/about/whatsapp_logo.svg" alt="">
+        </a>
+        <a href="">      <img src="./img/about/telegram_logo.svg" alt="">
+        </a>
+        <a href="">      <img src="./img/about/vk%20logo.svg" alt="">
+        </a>
+
+      </div>
+      <span>
+      Источники: krdit.group.ru
+    </span>
+
+    </div>
+  </div>
+</section>
+<section class="credit_15_mins">
+  <div class="container">
+    <div class="item">
+      <div class="left">
+        <img src="img/vigodn_credit/time2%201.svg" alt="" />
+        <h2>Одобрим кредит <span>за 15 минут</span></h2>
+      </div>
+      <div class="right">
+        <div class="wrapper">
+          <input
+            class="number_input phoneInput"
+            id="number_input"
+            placeholder="+ 7 (---) --- -- --"
+            type="text"
+          />
+          <div class="btn popup-trigger">
+            <img src="img/pocket.svg" alt="" />
+            <span>Оставить заявку</span>
+          </div>
+        </div>
+        <p>
+          Отправляя заявку, я предоставляю согласие <br />
+          на обработку персональных данных
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section_1">
+  <div class="container">
+    <div class="logos">
+      <img src="img/icon_partner/1.png" alt="" />
+      <img src="img/icon_partner/Sovcombank_logo.svg" alt="" />
+      <img src="img/icon_partner/MKB_logo.svg" alt="" />
+      <img src="img/icon_partner/Raiffeisen_Bank_logo.svg" alt="" />
+      <img src="img/icon_partner/YuniCredit_logo.svg" alt="" />
+    </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="item">
+      <div class="top">
+        <div class="logo_footer">
+          <img src="img/footer_logo.svg" alt="">
+          <span>Ведущий кредитный брокер в Москве</span>
+        </div>
+        <div class="links">
+          <a href="" class="link">О компании</a>
+          <a href="" class="link">Условия</a>
+          <a href="" class="link">База знаний</a>
+          <a href="" class="link">Новости</a>
+          <a href="" class="link">Контакты</a>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="wrapper">
+          <div class="info_left">
+            <div class="item">
+              <img src="./img/clock.svg" alt="" />
+              <span>Ежедневно с 8:00-23:00</span>
+            </div>
+            <div class="item">
+              <img src="img/smartphone.svg" alt="" />
+              <span>+7 (800) 888-88-88</span>
+            </div>
+            <div class="item item_phone">
+              <span>+7 (800) 888-88-88</span>
+            </div>
+          </div>
+          <div class="info_right">
+            <div class="links">
+              <a href="">
+                <img src="img/telegram_logo.svg" alt="" />
+
+              </a>
+              <a href="">
+                <img src="img/whatsapp_logo.svg" alt="" />
+
+              </a>
+            </div>
+            <span>info@kreditgroup.ru</span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+            <span
+            >Представленная информация не является публичной офертой,
+              определяемой положениями ст. 437 ГК Российской Федерации и носит
+              информационный характер.</span
+            >
+        <img src="img/gasfort_logo.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="./js/dropdown.js"></script>
+<script src="./js/calk.js"></script>
+<script src="./js/pop-up.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/inputmask.js"></script>
+<script src="./js/number_input.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/drop.js"></script>
+<script src="./js/inputCheck.js"></script>
+<script src="./js/phoneMaskScript.js"></script>
+</body>
+</html>

@@ -24,7 +24,16 @@ document.addEventListener('click', (e) => {
     }
 });
 document.addEventListener('click', (e) => { 
-  if(e.target == (closePopupButton || closePopupButton2 )) { 
+  if(e.target == (closePopupButton)) { 
+      popup_info.classList.remove('hidden'); 
+      confirmPopup.classList.add('hidden');
+      popup.classList.remove('show'); 
+      confirmPopup.classList.remove('show');
+      
+  } 
+});
+document.addEventListener('click', (e) => { 
+  if(e.target == ( closePopupButton2 )) { 
       popup_info.classList.remove('hidden'); 
       confirmPopup.classList.add('hidden');
       popup.classList.remove('show'); 
