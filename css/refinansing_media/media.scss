@@ -69,16 +69,20 @@
     margin-bottom: 100px;
     .content {
       margin: 0 10px;
-      gap: 30px;
+      gap: 20px;
       margin-bottom: 100px;
       .header {
         font-size: 26px;
         line-height: 39px;
+        br {
+          display: none;
+        }
       }
       .item {
         padding: 30px 10px;
         font-size: 12px;
         line-height: 18px;
+        width: 140px;        height: 200px;
         p,
         span {
           max-width: 120px;
@@ -214,6 +218,7 @@
         .items-column {
           gap: 10px;
           .item {
+            padding: 20px;
             p {
               font-size: 16px;
               line-height: 21px;
@@ -226,7 +231,7 @@
 }
 @media screen and (max-width: 600px) {
   .zalog {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     .content {
       margin: 0 10px;
       .header {
@@ -237,8 +242,8 @@
       }
       .items-container {
         .item {
-          max-width: 140px;
-          margin-bottom: 40px;
+          width: 150px;
+          height: 150px;
           .item-img-container {
             img {
               max-width: 84px;
@@ -264,6 +269,7 @@
     }
   }
   .offers {
+    margin-bottom: 100px;
     .content {
       margin: 0 27px;
       .header {

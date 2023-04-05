@@ -438,9 +438,11 @@ color: #2A2E33;
                 margin-bottom: 60px;
             }
             ol,ul{
+
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
+                margin-left: 15px;
                 li{
                     font-family: 'Raleway';
                     font-style: normal;

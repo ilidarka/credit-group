@@ -375,6 +375,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-left: 15px;
 }
 .article_text .container ol li, .article_text .container ul li {
   font-family: "Raleway";

@@ -7,6 +7,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -273,12 +275,12 @@ h6 {
   display: flex;
   gap: 20px;
   width: 100%;
-  padding: 20px;
+  padding: 20px 40px 20px 20px;
   background: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 20px;
   max-width: 460px;
+  box-shadow: 0px 10px 30px rgba(18, 27, 40, 0.1);
 }
 .convinient .content .items-container .items-column .item img {
   width: 24px;
@@ -294,6 +296,13 @@ h6 {
 
 .conditions {
   margin-bottom: 120px;
+  position: relative;
+}
+.conditions .conditions-bg {
+  position: absolute;
+  right: 0px;
+  z-index: -1000;
+  top: 0px;
 }
 .conditions .content {
   max-width: 1160px;
@@ -327,8 +336,7 @@ h6 {
 .conditions .content .header .right-container {
   padding: 20px 40px 20px 30px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 20px;
 }
 .conditions .content .header .right-container p {
@@ -368,8 +376,7 @@ h6 {
   display: none;
   padding: 20px 40px 20px 30px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 20px;
 }
 .conditions .bottom p {
@@ -426,8 +433,7 @@ h6 {
   font-feature-settings: "pnum" on, "lnum" on;
   padding: 30px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 30px;
   max-width: 360px;
   min-height: 230px;
@@ -435,6 +441,7 @@ h6 {
 }
 .fin-support .content .item:hover {
   background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  box-shadow: 0px 10px 40px rgba(197, 92, 189, 0.6);
 }
 .fin-support .content .item:hover img {
   display: none;
@@ -482,6 +489,11 @@ h6 {
 
 .help {
   margin-bottom: 120px;
+  position: relative;
+}
+.help .help-bg {
+  position: absolute;
+  left: 0px;
 }
 .help .content {
   max-width: 1160px;
@@ -643,8 +655,7 @@ h6 {
   gap: 30px;
   padding: 60px 40px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 50px;
   max-width: 560px;
   margin: 0 auto;
@@ -668,9 +679,15 @@ h6 {
 
 .request {
   margin-bottom: 120px;
+  position: relative;
+}
+.request .request-bg {
+  position: absolute;
+  left: 0px;
 }
 .request .content {
   max-width: 1160px;
+  box-shadow: 0px 10px 40px rgba(197, 92, 189, 0.6);
   margin: 0 auto;
   display: flex;
   background: linear-gradient(250.92deg, #a259ff 13.57%, #ff6250 97.65%);
@@ -784,13 +801,13 @@ h6 {
   max-width: 260px;
   width: 100%;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 30px;
 }
 .offers .content .items-container .item:hover {
   justify-content: center;
   background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  box-shadow: 0px 10px 40px rgba(197, 92, 189, 0.6);
 }
 .offers .content .items-container .item:hover p {
   display: none;
@@ -845,4 +862,6 @@ h6 {
 .offers .content .items-container .item .item-link-container .item-arrow-container .white-arrow {
   display: none;
   margin-bottom: 10px;
-}/*# sourceMappingURL=refinancing.css.map */
+}
+
+/*# sourceMappingURL=refinancing.css.map */

@@ -316,6 +316,7 @@ header {
   flex-direction: column;
   gap: 20px;
   font-feature-settings: "pnum" on, "lnum" on;
+  margin-left: 55px;
 }
 .requirements .container .content .list-container .list-header h2 {
   font-family: "Gilroy", sans-serif;
@@ -327,6 +328,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-left: 15px;
 }
 .requirements .container .content .list-container ul li {
   font-family: "Raleway", sans-serif;
@@ -666,6 +668,7 @@ header {
   flex-direction: column;
   gap: 20px;
   font-feature-settings: "pnum" on, "lnum" on;
+  margin-left: 55px;
 }
 .car-requirements .container .content .list-container .list-header h2 {
   font-family: "Gilroy", sans-serif;
@@ -677,6 +680,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-left: 15px;
 }
 .car-requirements .container .content .list-container ul li {
   font-family: "Raleway", sans-serif;
@@ -684,7 +688,7 @@ header {
   font-size: 16px;
   line-height: 28px;
   list-style: disc;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .car-requirements .container .content .documents-container {
   display: flex;

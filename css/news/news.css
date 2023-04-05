@@ -47,7 +47,6 @@
   text-align: left;
   position: static;
   width: 100%;
-  opacity: 0;
   transition: opacity 500ms linear;
 }
 .slide .slider-item {
@@ -63,6 +62,7 @@
 .slide .slider-item .item-img-container img {
   border-radius: 20px;
   width: 100%;
+  opacity: 1;
 }
 .slide .slider-item .item-text-container {
   display: flex;
@@ -160,7 +160,7 @@
   font-family: "Raleway", sans-serif;
   display: flex;
   position: relative;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 24px;
   line-height: 200%;
   color: #aba3bc;

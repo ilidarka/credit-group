@@ -1,6 +1,13 @@
 @media screen and (max-width: 550px) {
   .sub_title {
     font-size: 24px;
+    max-width: 300px;
+  }
+  .bistroe_odobrenie .item .bottom_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 51px;
   }
   .sub_hidden {
     font-size: 24px;
@@ -28,6 +35,7 @@
   .section_1 .benefits {
     flex-direction: column;
     gap: 50px;
+    margin-bottom: 60px;
   }
   .section_1 .logos {
     flex-direction: column;
@@ -62,6 +70,10 @@
   }
   .section_2 .item img {
     width: 300px;
+  }
+  .section_2 .item .info .benefits_1 {
+    top: -108px;
+    left: 13px;
   }
   .section_2 .item .info .btn-default {
     width: 100%;
@@ -112,6 +124,13 @@
   }
   .section_3 .steps .line {
     display: none;
+  }
+  .mar_b {
+    margin-bottom: 650px;
+  }
+  .section_4 {
+    margin-bottom: 620px;
+    background-image: none;
   }
   .section_4 .calculator {
     padding: 40px 30px;
@@ -183,6 +202,9 @@
     width: 300px;
     font-size: 16px;
   }
+  .mb_0 {
+    margin: 0;
+  }
   .section_6 .about_us {
     padding: 30px 20px;
     border-radius: 30px;
@@ -207,6 +229,9 @@
   .section_6 .about_us .items .item p {
     font-size: 16px;
     width: 239px;
+  }
+  .section_7 .container .wrapper {
+    align-items: flex-start;
   }
   .section_7 .item .top {
     flex-direction: column;
@@ -261,6 +286,7 @@
   .footer .item .middle .wrapper .info_left {
     flex-direction: column;
     gap: 30px;
+    align-items: center;
   }
   .footer .item .bottom {
     flex-direction: column;
@@ -382,6 +408,9 @@
     color: #aba3bc;
     max-width: 260px;
   }
+  .online_oformlenie {
+    margin-bottom: 510px;
+  }
   .online_oformlenie .block {
     padding: 30px 20px 30px 20px;
   }
@@ -472,6 +501,12 @@
   .online_oformlenie .block .bottom_info {
     flex-direction: column;
     gap: 20px;
+  }
+  .online_oformlenie .block .bottom_info .wrapp_btn .btn {
+    width: 250px;
+  }
+  .online_oformlenie .block .bottom_info .wrapp_btn .btn span {
+    min-width: 210px;
   }
   .online_oformlenie .block .bottom_info .wrapp_btn .sogl {
     width: 260px;
@@ -651,7 +686,16 @@
     font-size: 14px;
   }
   .section_1 .logos {
-    margin-top: 0;
+    display: none;
+    margin-top: 80px;
+  }
+  .section_1 .slider_adaptiv_partners {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: block;
+  }
+  .adaptiv_sec .logos {
+    margin: 0;
   }
   .section_6 .about_us .sub_title {
     font-family: "Raleway";
@@ -807,6 +851,9 @@
     margin-bottom: -92px;
     margin-left: 52px;
   }
+  .mr_80 {
+    margin-right: 80px;
+  }
   .conditions-links .container {
     display: flex;
     flex-wrap: wrap;
@@ -850,8 +897,8 @@
   .img_apd {
     position: absolute;
     width: 250px;
-    top: 247px;
-    left: 73px;
+    top: 337px;
+    left: 56px;
   }
   .vida4a_pod_zalog_kv .item {
     padding: 41px 10px 30px 10px;

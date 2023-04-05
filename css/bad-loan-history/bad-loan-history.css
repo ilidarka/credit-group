@@ -4,4 +4,27 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}/*# sourceMappingURL=bad-loan-history.css.map */
+}
+
+@media screen and (max-width: 550px) {
+  .main-section {
+    margin-bottom: 100px;
+  }
+  .main-section .content .left-container ul li {
+    align-items: flex-start;
+  }
+  .main-section .content .left-container ul li img {
+    margin-top: 2px;
+  }
+  .main-section .content .left-container .bottom {
+    gap: 10px;
+  }
+  .main-section .content .left-container .bottom .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=bad-loan-history.css.map */

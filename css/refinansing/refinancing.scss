@@ -86,6 +86,8 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+body {
+}
 .credits {
   margin-bottom: 120px;
   .content {
@@ -277,11 +279,12 @@ h6 {
           display: flex;
           gap: 20px;
           width: 100%;
-          padding: 20px;
+          padding: 20px 40px 20px 20px;
           background: rgba(255, 255, 255, 0.8);
           backdrop-filter: blur(15px);
           border-radius: 20px;
           max-width: 460px;
+          box-shadow: 0px 10px 30px rgba(18, 27, 40, 0.1);
           img {
             width: 24px;
             height: 24px;
@@ -300,6 +303,13 @@ h6 {
 }
 .conditions {
   margin-bottom: 120px;
+  position: relative;
+  .conditions-bg {
+    position: absolute;
+    right: 0px;
+    z-index: -1000;
+    top: 0px;
+  }
   .content {
     max-width: 1160px;
     margin: 0 auto;
@@ -438,7 +448,7 @@ h6 {
       box-shadow: 0px 10px 40px rgba(18, 27, 40, 0.1);
       &:hover {
         background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
-
+        box-shadow: 0px 10px 40px rgba(197, 92, 189, 0.6);
         img {
           display: none;
         }
@@ -490,6 +500,11 @@ h6 {
 }
 .help {
   margin-bottom: 120px;
+  position: relative;
+  .help-bg {
+    position: absolute;
+    left: 0px;
+  }
   .content {
     max-width: 1160px;
     margin: 0 auto;
@@ -691,8 +706,14 @@ h6 {
 }
 .request {
   margin-bottom: 120px;
+  position: relative;
+  .request-bg {
+    position: absolute;
+    left: 0px;
+  }
   .content {
     max-width: 1160px;
+    box-shadow: 0px 10px 40px rgba(197, 92, 189, 0.6);
     margin: 0 auto;
     display: flex;
     background: linear-gradient(250.92deg, #a259ff 13.57%, #ff6250 97.65%);
@@ -818,6 +839,7 @@ h6 {
             #a259ff 13.57%,
             #ff6250 97.65%
           );
+          box-shadow: 0px 10px 40px rgba(197, 92, 189, 0.6);
           p {
             display: none;
           }

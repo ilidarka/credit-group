@@ -26,8 +26,7 @@
   width: 669px;
   height: 248px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 40px;
 }
@@ -63,6 +62,7 @@
   margin-top: 10px;
 }
 #slider .wrapper {
+  margin: 0 0 30px 0;
   display: flex;
   gap: 30px;
 }
@@ -109,8 +109,7 @@
   padding: 29px 32px;
   color: white;
   background: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 20px;
 }
@@ -125,8 +124,7 @@
   width: 70px;
   height: 70px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 20px;
 }
@@ -190,4 +188,6 @@
 }
 .dots {
   display: none;
-}/*# sourceMappingURL=slider.css.map */
+}
+
+/*# sourceMappingURL=slider.css.map */

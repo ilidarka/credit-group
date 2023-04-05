@@ -19,7 +19,7 @@ window.onclick = function(event) {
 
 function inputPrice(){
     let a = document.querySelector(".value_calck_price");
-    let b = document.querySelector(".slider");
+    let b = document.querySelector(".slider_2");
     a.textContent = b.value * 200000;
     if(b.value ==0){
         a.textContent = 50000

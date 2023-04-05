@@ -61,20 +61,25 @@
   }
   .fin-support .content {
     margin: 0 10px;
-    gap: 30px;
+    gap: 20px;
     margin-bottom: 100px;
   }
   .fin-support .content .header {
     font-size: 26px;
     line-height: 39px;
   }
+  .fin-support .content .header br {
+    display: none;
+  }
   .fin-support .content .item {
     padding: 30px 10px;
     font-size: 12px;
     line-height: 18px;
+    width: 140px;
+    height: 200px;
   }
   .fin-support .content .item p,
-.fin-support .content .item span {
+  .fin-support .content .item span {
     max-width: 120px;
   }
   .fin-support .content .text-container {
@@ -199,6 +204,9 @@
   .convinient .content .items-container .items-column {
     gap: 10px;
   }
+  .convinient .content .items-container .items-column .item {
+    padding: 20px;
+  }
   .convinient .content .items-container .items-column .item p {
     font-size: 16px;
     line-height: 21px;
@@ -206,7 +214,7 @@
 }
 @media screen and (max-width: 600px) {
   .zalog {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
   .zalog .content {
     margin: 0 10px;
@@ -218,8 +226,8 @@
     margin-bottom: 10px;
   }
   .zalog .content .items-container .item {
-    max-width: 140px;
-    margin-bottom: 40px;
+    width: 150px;
+    height: 150px;
   }
   .zalog .content .items-container .item .item-img-container img {
     max-width: 84px;
@@ -239,6 +247,9 @@
     max-width: 14px;
     max-height: 14px;
   }
+  .offers {
+    margin-bottom: 100px;
+  }
   .offers .content {
     margin: 0 27px;
   }
@@ -254,4 +265,6 @@
     max-width: none;
     min-height: 200px;
   }
-}/*# sourceMappingURL=media.css.map */
+}
+
+/*# sourceMappingURL=media.css.map */

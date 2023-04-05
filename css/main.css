@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.bg_sec_1 {
+  background-image: url("/img/bg/bg_sec_1.svg");
+  background-size: cover;
+}
+
 input {
   outline: none;
   border: none;
@@ -67,6 +72,7 @@ datalist {
 }
 
 .btn {
+  width: 250px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -85,7 +91,6 @@ datalist {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
-  width: 151px;
 }
 
 .btn-green {
@@ -455,7 +460,7 @@ datalist {
   backdrop-filter: blur(5px);
   border-radius: 40px;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 143px;
 }
@@ -472,7 +477,7 @@ datalist {
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  max-width: 160px;
+  max-width: 186px;
 }
 
 .section_2 .item {
@@ -496,18 +501,18 @@ datalist {
 }
 .section_2 .item .info .benefits_cards {
   position: absolute;
-  top: 305px;
+  top: 331px;
   right: 600px;
 }
 .section_2 .item .info .benefits_1 {
   position: absolute;
-  top: 205px;
-  right: 600px;
+  top: 225px;
+  right: 635px;
 }
 .section_2 .item .info .benefits_cards_1 {
   position: absolute;
   left: 574px;
-  top: 190px;
+  top: 207px;
 }
 .section_2 .item .info .folder_house {
   position: absolute;
@@ -620,6 +625,11 @@ datalist {
   color: #2a2e33;
 }
 
+.section_4 {
+  background: url("/img/bg/bg_sec_4.svg");
+  height: 758px;
+  background-size: cover;
+}
 .section_4 .sub_title {
   margin-bottom: 50px;
 }
@@ -703,12 +713,13 @@ datalist {
   /* identical to box height, or 29px */
   font-feature-settings: "pnum" on, "lnum" on;
 }
-.section_4 .calculator .wrapper_items .item .wrapper .slider {
+.section_4 .calculator .wrapper_items .item .wrapper .slider_2 {
+  position: inherit;
   -webkit-appearance: none;
   width: 100%;
   height: 3px;
   /*     background: #1B2FB2; */
-  background-color: #ccc;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   outline: none;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
@@ -725,10 +736,10 @@ datalist {
   top: 50%;
   border-radius: 20px;
 }
-.section_4 .calculator .wrapper_items .item .wrapper .slider:hover {
+.section_4 .calculator .wrapper_items .item .wrapper .slider_2:hover {
   opacity: 1;
 }
-.section_4 .calculator .wrapper_items .item .wrapper .slider::-webkit-slider-thumb {
+.section_4 .calculator .wrapper_items .item .wrapper .slider_2::-webkit-slider-thumb {
   appearance: none;
   width: 30px;
   height: 30px;
@@ -921,11 +932,12 @@ datalist {
   font-feature-settings: "pnum" on, "lnum" on;
 }
 .section_4 .wrapper_1 .slider_1 {
+  position: inherit;
   -webkit-appearance: none;
   width: 100%;
   height: 3px;
   /*     background: #1B2FB2; */
-  background-color: #ccc;
+  background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   outline: none;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
@@ -1004,6 +1016,7 @@ datalist {
   align-items: start;
   gap: 10px;
   padding: 20px 26px;
+  box-shadow: 0px 10px 30px rgba(18, 27, 40, 0.1);
 }
 .section_6 .about_us .items .item_txt span {
   font-family: "Raleway";
@@ -1025,6 +1038,8 @@ datalist {
   flex-direction: column;
   gap: 10px;
   padding: 20px 26px;
+  box-shadow: 0px 10px 30px rgba(18, 27, 40, 0.1);
+  border: 1px solid #fff;
 }
 .section_6 .about_us .items .item .text {
   font-family: "Raleway";
@@ -1124,6 +1139,8 @@ datalist {
 }
 
 .fin-support {
+  background-image: url("/img/bg/bg_sec_5.svg");
+  background-size: cover;
   margin-top: 120px;
   margin-bottom: 120px;
 }
@@ -1170,6 +1187,7 @@ datalist {
   border-radius: 30px;
   max-width: 360px;
   min-height: 230px;
+  box-shadow: 0px 10px 40px rgba(18, 27, 40, 0.1);
 }
 .fin-support .content .item:hover {
   background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
@@ -1198,6 +1216,7 @@ datalist {
   flex-direction: column;
   gap: 40px;
   background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  box-shadow: 0px 10px 40px rgba(197, 92, 189, 0.6);
 }
 .fin-support .content .last p {
   font-family: "Gilroy";
@@ -1257,6 +1276,8 @@ datalist {
 }
 
 .section_8 {
+  background-image: url("/img/bg/bg_message.svg");
+  background-size: cover;
   margin-top: 150px;
   margin-bottom: 120px;
 }

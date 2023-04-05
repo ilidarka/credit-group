@@ -1,4 +1,4 @@
-const slider = document.querySelector(".slider");
+const slider = document.querySelector(".slider_2");
 const progress = document.querySelector(".progress");
 const slider_1 = document.querySelector(".slider_1");
 const progress_1 = document.querySelector(".progress_1");

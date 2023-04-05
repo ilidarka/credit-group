@@ -9,3 +9,30 @@
     }
   }
 }
+
+@media screen and (max-width: 550px) {
+  .main-section {
+    margin-bottom: 100px;
+    .content {
+      .left-container {
+        ul {
+          li {
+            align-items: flex-start;
+            img {
+              margin-top: 2px;
+            }
+          }
+        }
+        .bottom {
+          gap: 10px;
+          .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

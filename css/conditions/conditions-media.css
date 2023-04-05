@@ -106,6 +106,9 @@
     flex-direction: column;
     gap: 30px;
   }
+  .requirements .container .content .list-container {
+    margin-left: 0px;
+  }
   .requirements .container .content .documents-container .documents-header h2 {
     font-size: 24px;
     line-height: 31px;
@@ -169,6 +172,9 @@
   .car-requirements .container .content {
     flex-direction: column;
     gap: 30px;
+  }
+  .car-requirements .container .content .list-container {
+    margin-left: 0px;
   }
   .documents .container {
     margin: 0 10px;

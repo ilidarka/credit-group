@@ -1,6 +1,13 @@
 @media screen and (max-width: 550px) {
   .sub_title {
     font-size: 24px;
+    max-width: 300px;
+  }
+  .bistroe_odobrenie .item .bottom_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 51px;
   }
   .sub_hidden {
     font-size: 24px;
@@ -33,6 +40,7 @@
     .benefits {
       flex-direction: column;
       gap: 50px;
+      margin-bottom: 60px;
     }
 
     .logos {
@@ -78,6 +86,10 @@
         width: 300px;
       }
       .info {
+        .benefits_1{
+          top: -108px;
+          left: 13px;
+        }
         .btn-default {
           width: 100%;
           justify-content: center;
@@ -148,7 +160,12 @@
       }
     }
   }
+  .mar_b{
+    margin-bottom: 650px;
+  }
   .section_4 {
+    margin-bottom: 620px;
+    background-image: none;
     .calculator {
       padding: 40px 30px;
 
@@ -241,6 +258,9 @@
       }
     }
   }
+  .mb_0{
+    margin: 0;
+  }
   .section_6 {
     .about_us {
       padding: 30px 20px;
@@ -278,6 +298,11 @@
     }
   }
   .section_7 {
+    .container{
+      .wrapper{
+        align-items: flex-start;
+      }
+    }
     .item {
       .top {
         flex-direction: column;
@@ -343,6 +368,7 @@
           .info_left {
             flex-direction: column;
             gap: 30px;
+            align-items: center;
           }
         }
       }
@@ -504,6 +530,7 @@
     }
   }
   .online_oformlenie {
+    margin-bottom: 510px;
     .block {
       padding: 30px 20px 30px 20px;
       p {
@@ -602,6 +629,12 @@
         flex-direction: column;
         gap: 20px;
         .wrapp_btn {
+          .btn{
+            width: 250px;
+            span{
+              min-width: 210px;
+            }
+          }
           .sogl {
             width: 260px;
             br {
@@ -829,7 +862,18 @@
 
   .section_1{
     .logos{
-      margin-top: 0;
+      display: none;
+      margin-top: 80px;
+    }
+    .slider_adaptiv_partners{
+      margin-top: 80px;
+      margin-bottom: 80px;
+      display: block;
+    }
+  }
+  .adaptiv_sec{
+    .logos{
+      margin: 0;
     }
   }
   .section_6 {
@@ -1026,6 +1070,9 @@
       }
     }
   }
+  .mr_80{
+    margin-right: 80px;
+  }
   .conditions-links{
     .container{
       display: flex;
@@ -1048,6 +1095,7 @@
       max-width: 300px;
     }
   }
+
   .news_links{
     margin-bottom: 80px;
     .block{
@@ -1076,8 +1124,8 @@
   .img_apd{
     position: absolute;
     width: 250px;
-    top: 247px;
-    left: 73px;
+    top: 337px;
+    left: 56px;
   }
   .vida4a_pod_zalog_kv{
     .item{

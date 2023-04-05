@@ -2,7 +2,6 @@
   margin-bottom: 120px;
 }
 .main-section .content {
-  position: relative;
   display: flex;
   align-items: center;
   max-width: 1160px;
@@ -253,13 +252,15 @@
 }
 
 .online_oformlenie {
+  background: url("/img/bg/bg_sec_4.svg");
+  height: 758px;
+  background-size: cover;
   margin-bottom: 120px;
 }
 .online_oformlenie .block {
   padding: 40px 60px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 50px;
 }
@@ -278,6 +279,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+}
+.online_oformlenie .block .bottom_info .wrapp_btn .btn {
+  width: 300px;
+}
+.online_oformlenie .block .bottom_info .wrapp_btn .btn span {
+  min-width: 289px;
 }
 .online_oformlenie .block .bottom_info .wrapp_btn .sogl {
   font-family: "Raleway";
@@ -381,12 +388,6 @@
   font-feature-settings: "pnum" on, "lnum" on;
   /* black */
   color: #2a2e33;
-}
-.online_oformlenie .block .wrapper_inputs .left_content .item .input input::-moz-placeholder {
-  color: #c3bcd1;
-}
-.online_oformlenie .block .wrapper_inputs .left_content .item .input input:-ms-input-placeholder {
-  color: #c3bcd1;
 }
 .online_oformlenie .block .wrapper_inputs .left_content .item .input input::placeholder {
   color: #c3bcd1;
@@ -582,8 +583,7 @@
   width: 260px;
   height: 231px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -707,4 +707,6 @@
 
 .slider_2 .wrapper_dots_btn {
   display: none;
-}/*# sourceMappingURL=vigodn_credit.css.map */
+}
+
+/*# sourceMappingURL=vigodn_credit.css.map */

@@ -1,7 +1,6 @@
 .main-section {
   margin-bottom: 120px;
   .content {
-    position: relative;
     display: flex;
     align-items: center;
     max-width: 1160px;
@@ -278,6 +277,9 @@
   margin-bottom: 120px;
 }
 .online_oformlenie {
+  background: url("/img/bg/bg_sec_4.svg");
+  height: 758px;
+  background-size: cover;
   margin-bottom: 120px;
   .block {
     padding: 40px 60px;
@@ -300,6 +302,12 @@
         flex-direction: column;
         justify-content: center;
         gap: 10px;
+        .btn{
+          width: 300px;
+          span{
+            min-width: 289px;
+          }
+        }
         .sogl {
           font-family: "Raleway";
           font-style: normal;

@@ -121,6 +121,9 @@
       .content {
         flex-direction: column;
         gap: 30px;
+        .list-container {
+          margin-left: 0px;
+        }
         .documents-container {
           .documents-header {
             h2 {
@@ -197,6 +200,9 @@
       .content {
         flex-direction: column;
         gap: 30px;
+        .list-container {
+          margin-left: 0px;
+        }
       }
     }
   }
