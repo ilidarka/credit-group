@@ -68,6 +68,9 @@
     font-size: 26px;
     line-height: 39px;
   }
+  .fin-support .content .header p {
+    display: none;
+  }
   .fin-support .content .header br {
     display: none;
   }

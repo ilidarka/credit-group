@@ -7,6 +7,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -268,8 +270,7 @@ h6 {
   width: 100%;
   padding: 20px;
   background: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 20px;
   max-width: 460px;
 }
@@ -321,8 +322,7 @@ h6 {
 .conditions .content .header .right-container {
   padding: 20px 40px 20px 30px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 20px;
 }
 .conditions .content .header .right-container p {
@@ -400,8 +400,7 @@ h6 {
   font-feature-settings: "pnum" on, "lnum" on;
   padding: 30px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 30px;
   max-width: 360px;
   max-height: 230px;
@@ -608,8 +607,7 @@ h6 {
   gap: 30px;
   padding: 60px 40px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 50px;
   max-width: 560px;
 }
@@ -710,4 +708,6 @@ h6 {
   letter-spacing: 0.015em;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #ffffff;
-}/*# sourceMappingURL=refinancing.css.map */
+}
+
+/*# sourceMappingURL=refinancing.css.map */
