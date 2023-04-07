@@ -1229,12 +1229,27 @@ datalist {
       line-height: 115%;
       letter-spacing: -0.01em;
       color: #2a2e33;
+
+      p{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 180%;
+        /* or 29px */
+
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        color: #70697D;
+        max-width: 604px;
+      }
       span {
         background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
       }
+
     }
     .item {
       height: 280px;
@@ -1959,7 +1974,7 @@ datalist {
 
 .fin-support {
   .sub_title {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .content {
     .item_txt {

@@ -298,6 +298,9 @@
     font-size: 16px;
     text-align: center;
   }
+  .fin-support .container .content .header p {
+    display: none;
+  }
   .fin-support .last .btn span {
     width: 146px;
   }

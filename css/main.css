@@ -1161,6 +1161,17 @@ datalist {
   letter-spacing: -0.01em;
   color: #2a2e33;
 }
+.fin-support .content .header p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  /* or 29px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #70697D;
+  max-width: 604px;
+}
 .fin-support .content .header span {
   background: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
   -webkit-background-clip: text;
@@ -1797,7 +1808,7 @@ datalist {
 }
 
 .fin-support .sub_title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .fin-support .content .item_txt {
   padding: 34px 40px;
